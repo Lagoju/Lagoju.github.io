@@ -1,6 +1,6 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,236 +12,216 @@
 
 <body>
 
-    <header>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <h2 class="logo">Jonah Peter</h2>
 
-        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-            <h2>Jonah Peter</h2>
 
-            <div>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </div>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
 
-        </nav>
+            <p class="hero-intro">Hello, I'm Jonah.</p>
 
+            <h1>Turning data into meaningful insights.</h1>
+
+            <p class="hero-description">
+                Data Analyst interested in understanding problems,
+                uncovering patterns, and finding the story behind the numbers.
+            </p>
+
+            <a href="#projects" class="button">View My Projects</a>
+
+        </div>
     </header>
 
 
-    <main>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
 
-        <!-- HERO SECTION -->
+            <h2>About Me</h2>
 
-        <section class="hero">
+            <div class="about-content">
 
-            <p class="eyebrow">DATA ANALYST</p>
+                <p>
+                    I’m a Data Analyst who enjoys asking questions.
+                </p>
 
-            <h1>
-                Turning data into
-                <span>meaningful insights.</span>
-            </h1>
+                <p>
+                    My approach to analysis revolves around identifying common
+                    or recurring problems, digging into the data, and figuring
+                    out why they are happening. I’m less interested in simply
+                    reporting <em>what</em> happened and more interested in
+                    understanding the story behind it — what changed, what
+                    might be causing it, and where the problem actually lies.
+                </p>
 
-            <p class="intro">
-                I'm Jonah Peter, a Data Analyst focused on
-                transforming data into meaningful insights.
-                I use data analysis, visualization, and
-                business-focused thinking to explore complex
-                datasets and communicate findings clearly.
-            </p>
+                <p>
+                    My toolkit includes Excel, SQL, Python, and Power BI,
+                    along with an unhealthy amount of curiosity. I enjoy the
+                    entire process of working with data — from cleaning the
+                    wonderfully chaotic stuff that people insist is
+                    “ready to analyse,” to building dashboards and reports
+                    that make the final answer easier to understand.
+                </p>
 
-            <div class="buttons">
+                <p>
+                    I’m constantly learning, experimenting, and finding new
+                    ways to approach problems — while, of course, occasionally
+                    discovering that the reason my analysis wasn't working
+                    was because I forgot one comma three hours ago.
+                </p>
 
-                <a href="#projects" class="button">
-                    View My Work
-                </a>
-
-                <a href="#" class="button secondary">
-                    LinkedIn
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- ABOUT SECTION -->
-
-        <section id="about">
-
-            <p class="section-label">ABOUT ME</p>
-
-            <h2>Analytical thinking. Curious mindset.</h2>
-
-            <p>
-                I'm building my career in data analytics, with
-                a focus on transforming raw data into clear,
-                actionable insights.
-            </p>
-
-            <p>
-                Through my projects, I work with real-world
-                datasets to explore questions, clean and
-                analyze data, and communicate findings through
-                visualizations and dashboards.
-            </p>
-
-        </section>
-
-
-        <!-- PROJECTS SECTION -->
-
-        <section id="projects">
-
-            <p class="section-label">SELECTED WORK</p>
-
-            <h2>My Projects</h2>
-
-
-            <div class="projects">
-
-
-                <!-- PROJECT 1 -->
-
-                <article class="project-card">
-
-                    <p class="project-number">01</p>
-
-                    <h3>
-                        Nigerian Health Inequality Analysis
-                    </h3>
-
-                    <p>
-                        A data analysis project exploring
-                        patterns and disparities in health
-                        outcomes across Nigeria.
-                    </p>
-
-                    <p class="tools">
-                        Data Analysis
-                    </p>
-
-                    <a href="#">
-                        View Project →
-                    </a>
-
-                </article>
-
-
-                <!-- PROJECT 2 -->
-
-                <article class="project-card">
-
-                    <p class="project-number">02</p>
-
-                    <h3>
-                        NPFL Data Analytics
-                    </h3>
-
-                    <p>
-                        A data analytics project exploring
-                        Nigerian Premier Football League data
-                        to uncover trends, patterns, and insights.
-                    </p>
-
-                    <p class="tools">
-                        Data Analysis
-                    </p>
-
-                    <a href="#">
-                        View Project →
-                    </a>
-
-                </article>
-
-
-                <!-- PROJECT 3 -->
-
-                <article class="project-card">
-
-                    <p class="project-number">03</p>
-
-                    <h3>
-                        Project Three
-                    </h3>
-
-                    <p>
-                        Currently in progress.
-                    </p>
-
-                    <p class="tools">
-                        Coming Soon
-                    </p>
-
-                    <a href="#">
-                        Coming Soon →
-                    </a>
-
-                </article>
-
+                <p class="about-highlight">
+                    Data can tell you what happened. I want to know why.
+                </p>
 
             </div>
 
-        </section>
+        </div>
+    </section>
 
 
-        <!-- SKILLS SECTION -->
+    <!-- Projects Section -->
+    <section id="projects" class="section section-light">
+        <div class="container">
 
-        <section id="skills">
+            <h2>Projects</h2>
 
-            <p class="section-label">TOOLS & SKILLS</p>
+            <p class="section-intro">
+                A selection of my data analysis projects, exploring real-world
+                questions through data.
+            </p>
 
-            <h2>What I work with</h2>
+            <div class="project-grid">
 
-            <div class="skills">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3>Nigerian Health Inequality Analysis</h3>
 
-                <span>SQL</span>
+                    <p>
+                        An analysis exploring health inequality in Nigeria
+                        and the factors that may contribute to differences
+                        in health outcomes.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="#" class="button">View Project</a>
+                    </div>
+                </div>
+
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3>NPFL Data Analytics</h3>
+
+                    <p>
+                        A data analysis project exploring trends, patterns,
+                        and insights from the Nigerian Professional Football League.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="#" class="button">View Project</a>
+                    </div>
+                </div>
+
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h3>Project Three</h3>
+
+                    <p>
+                        Coming soon. A new data analysis project is currently
+                        in progress.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="#" class="button">Coming Soon</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+
+            <h2>Skills & Tools</h2>
+
+            <div class="skills-list">
                 <span>Excel</span>
+                <span>SQL</span>
                 <span>Power BI</span>
                 <span>Python</span>
                 <span>Pandas</span>
                 <span>Data Cleaning</span>
-                <span>Data Visualization</span>
                 <span>Exploratory Data Analysis</span>
+                <span>Data Visualization</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-light">
+        <div class="container contact-content">
+
+            <h2>Let's Connect</h2>
+
+            <p>
+                Interested in my work or want to connect?
+                Feel free to reach out.
+            </p>
+
+            <div class="contact-links">
+
+                <a href="#" class="button">
+                    LinkedIn
+                </a>
+
+                <a href="mailto:your@email.com" class="button">
+                    Email Me
+                </a>
+
+                <a href="#" class="button">
+                    Medium
+                </a>
 
             </div>
 
-        </section>
+        </div>
+    </section>
 
 
-        <!-- CONTACT SECTION -->
-
-        <section id="contact">
-
-            <p class="section-label">GET IN TOUCH</p>
-
-            <h2>Let's connect.</h2>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
 
             <p>
-                Interested in data, analytics, or collaboration?
-                Feel free to get in touch.
+                © 2026 Jonah Peter. Built with data, curiosity, and a questionable
+                number of commas.
             </p>
 
-            <a href="mailto:your@email.com" class="button">
-                Email Me
-            </a>
-
-        </section>
-
-
-    </main>
-
-
-    <footer>
-
-        <p>
-            © 2026 Jonah Peter
-        </p>
-
+        </div>
     </footer>
 
 
 </body>
-
 </html>
+```
