@@ -1,0 +1,359 @@
+/* ==============================
+   GENERAL STYLES
+   ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #f8fafc;
+}
+
+
+/* ==============================
+   NAVIGATION
+   ============================== */
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 20px;
+    color: #111827;
+}
+
+nav div {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #111827;
+}
+
+
+/* ==============================
+   MAIN CONTENT
+   ============================== */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+/* ==============================
+   HERO
+   ============================== */
+
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.eyebrow {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: #2563eb;
+}
+
+.hero h1 {
+    max-width: 800px;
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    color: #111827;
+}
+
+.hero h1 span {
+    display: block;
+    color: #2563eb;
+}
+
+.intro {
+    max-width: 650px;
+    font-size: 20px;
+    color: #6b7280;
+    margin-bottom: 35px;
+}
+
+
+/* ==============================
+   BUTTONS
+   ============================== */
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 24px;
+
+    background-color: #2563eb;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+.button.secondary {
+    background-color: transparent;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+}
+
+
+/* ==============================
+   SECTION HEADINGS
+   ============================== */
+
+.section-label {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+section h2 {
+    font-size: 38px;
+    color: #111827;
+    margin-bottom: 25px;
+}
+
+
+/* ==============================
+   ABOUT
+   ============================== */
+
+#about {
+    max-width: 800px;
+}
+
+#about p:not(.section-label) {
+    color: #6b7280;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+
+/* ==============================
+   PROJECTS
+   ============================== */
+
+.projects {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.project-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-number {
+    font-size: 13px;
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.project-card .tools {
+    font-size: 13px;
+    font-weight: bold;
+    color: #374151;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+
+/* ==============================
+   SKILLS
+   ============================== */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    background-color: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+
+    padding: 10px 16px;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   CONTACT
+   ============================== */
+
+#contact {
+    max-width: 700px;
+}
+
+#contact p:not(.section-label) {
+    color: #6b7280;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+    text-align: center;
+
+    padding: 40px 20px;
+
+    border-top: 1px solid #e5e7eb;
+
+    color: #9ca3af;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   MOBILE
+   ============================== */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    main {
+        padding: 0 20px;
+    }
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav div {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .intro {
+        font-size: 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+}
