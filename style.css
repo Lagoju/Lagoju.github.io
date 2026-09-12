@@ -1,6 +1,6 @@
-/* ==============================
-   GENERAL STYLES
-   ============================== */
+/* =========================
+   RESET & GENERAL
+========================= */
 
 * {
     margin: 0;
@@ -13,347 +13,520 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #1f2937;
-    background-color: #f8fafc;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111827;
+    background: #ffffff;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 
-/* ==============================
+/* =========================
    NAVIGATION
-   ============================== */
-
-header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+========================= */
 
 nav {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px 30px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav h2 {
-    font-size: 20px;
+.logo {
+    font-size: 21px;
+    font-weight: 700;
     color: #111827;
 }
 
-nav div {
+.nav-links {
     display: flex;
-    gap: 25px;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
 }
 
-nav a {
-    text-decoration: none;
+.nav-links a {
     color: #4b5563;
     font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
-nav a:hover {
-    color: #111827;
+.nav-links a:hover {
+    color: #2563eb;
 }
 
 
-/* ==============================
-   MAIN CONTENT
-   ============================== */
+/* =========================
+   HERO
+========================= */
 
-main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 30px;
-}
-
-section {
+.hero {
+    background: #f8fafc;
+    min-height: 560px;
+    display: flex;
+    align-items: center;
     padding: 100px 0;
 }
 
-
-/* ==============================
-   HERO
-   ============================== */
-
-.hero {
-    min-height: 80vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.hero-content {
+    max-width: 850px;
 }
 
-.eyebrow {
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
+.hero-intro {
     color: #2563eb;
-}
-
-.hero h1 {
-    max-width: 800px;
-    font-size: 64px;
-    line-height: 1.1;
-    margin-bottom: 30px;
-    color: #111827;
-}
-
-.hero h1 span {
-    display: block;
-    color: #2563eb;
-}
-
-.intro {
-    max-width: 650px;
-    font-size: 20px;
-    color: #6b7280;
-    margin-bottom: 35px;
-}
-
-
-/* ==============================
-   BUTTONS
-   ============================== */
-
-.buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.button {
-    display: inline-block;
-    padding: 13px 24px;
-
-    background-color: #2563eb;
-    color: white;
-
-    text-decoration: none;
-    border-radius: 6px;
-
-    font-size: 15px;
-}
-
-.button:hover {
-    opacity: 0.85;
-}
-
-.button.secondary {
-    background-color: transparent;
-    color: #2563eb;
-    border: 1px solid #2563eb;
-}
-
-
-/* ==============================
-   SECTION HEADINGS
-   ============================== */
-
-.section-label {
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: #2563eb;
+    font-size: 17px;
+    font-weight: 600;
     margin-bottom: 15px;
 }
 
-section h2 {
-    font-size: 38px;
+.hero h1 {
+    font-size: 72px;
+    line-height: 1.05;
+    letter-spacing: -3px;
     color: #111827;
     margin-bottom: 25px;
 }
 
+.hero-description {
+    max-width: 680px;
+    color: #4b5563;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
 
-/* ==============================
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 13px 23px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    padding: 100px 0;
+}
+
+.section-light {
+    background: #f8fafc;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-label {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.section h2 {
+    max-width: 750px;
+    font-size: 42px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    color: #111827;
+}
+
+.section-intro {
+    max-width: 700px;
+    margin-top: 18px;
+    color: #6b7280;
+    font-size: 17px;
+}
+
+
+/* =========================
    ABOUT
-   ============================== */
+========================= */
 
-#about {
+.about-content {
     max-width: 800px;
 }
 
-#about p:not(.section-label) {
-    color: #6b7280;
+.about-content p {
+    color: #4b5563;
     font-size: 17px;
-    margin-bottom: 15px;
+    margin-bottom: 24px;
+}
+
+.about-opening {
+    color: #111827 !important;
+    font-size: 23px !important;
+    font-weight: 600;
+}
+
+.about-highlight {
+    margin-top: 45px;
+    padding: 28px 32px;
+    background: #eff6ff;
+    border-left: 4px solid #2563eb;
+    border-radius: 4px;
+}
+
+.about-highlight p {
+    margin: 0;
+    color: #111827;
+    font-size: 23px;
+}
+
+.about-highlight strong {
+    color: #2563eb;
 }
 
 
-/* ==============================
+/* =========================
    PROJECTS
-   ============================== */
+========================= */
 
-.projects {
+.project-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 25px;
 }
 
 .project-card {
-    background-color: white;
-
-    padding: 30px;
-
+    background: #ffffff;
     border: 1px solid #e5e7eb;
     border-radius: 10px;
-
-    transition: transform 0.2s ease;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    min-height: 390px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
 }
 
 .project-number {
-    font-size: 13px;
     color: #2563eb;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 22px;
 }
 
 .project-card h3 {
     font-size: 22px;
+    line-height: 1.35;
     color: #111827;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .project-card p {
     color: #6b7280;
-    margin-bottom: 20px;
+    font-size: 15px;
+    margin-bottom: 25px;
 }
 
-.project-card .tools {
-    font-size: 13px;
-    font-weight: bold;
-    color: #374151;
+.project-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 30px;
 }
 
-.project-card a {
-    text-decoration: none;
+.project-tools span {
+    background: #f3f4f6;
+    color: #4b5563;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: auto;
+}
+
+.text-link {
     color: #2563eb;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.text-link:hover {
+    color: #1d4ed8;
 }
 
 
-/* ==============================
-   SKILLS
-   ============================== */
+/* =========================
+   WRITING
+========================= */
 
-.skills {
+.writing-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.writing-layout .section-heading {
+    margin-bottom: 0;
+}
+
+.writing-content {
+    max-width: 550px;
+}
+
+.writing-content p {
+    color: #4b5563;
+    font-size: 17px;
+    margin-bottom: 22px;
+}
+
+.writing-content .button {
+    margin-top: 12px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-list {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
 }
 
-.skills span {
-    background-color: white;
-
-    border: 1px solid #e5e7eb;
-    border-radius: 6px;
-
-    padding: 10px 16px;
-
+.skills-list span {
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    color: #1d4ed8;
+    padding: 10px 17px;
+    border-radius: 20px;
     font-size: 14px;
+    font-weight: 600;
 }
 
 
-/* ==============================
+/* =========================
    CONTACT
-   ============================== */
+========================= */
 
-#contact {
+.contact-section {
+    background: #111827;
+}
+
+.contact-content {
+    text-align: center;
     max-width: 700px;
 }
 
-#contact p:not(.section-label) {
-    color: #6b7280;
+.contact-content .section-label {
+    color: #60a5fa;
+}
+
+.contact-content h2 {
+    color: #ffffff;
+    margin: 0 auto 20px;
+}
+
+.contact-content > p:not(.section-label) {
+    color: #9ca3af;
     font-size: 17px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.contact-links .button {
+    background: #2563eb;
+}
+
+.contact-links .button:hover {
+    background: #1d4ed8;
 }
 
 
-/* ==============================
+/* =========================
    FOOTER
-   ============================== */
+========================= */
 
 footer {
+    background: #0b1120;
+    color: #6b7280;
+    padding: 25px 0;
     text-align: center;
+}
 
-    padding: 40px 20px;
-
-    border-top: 1px solid #e5e7eb;
-
-    color: #9ca3af;
-
-    font-size: 14px;
+footer p {
+    font-size: 13px;
 }
 
 
-/* ==============================
-   MOBILE
-   ============================== */
+/* =========================
+   TABLET
+========================= */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
-    nav {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .hero h1 {
-        font-size: 45px;
-    }
-
-    .projects {
+    .project-grid {
         grid-template-columns: 1fr;
     }
 
-    section {
-        padding: 70px 0;
+    .project-card {
+        min-height: auto;
+    }
+
+    .writing-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 
 }
 
 
-@media (max-width: 500px) {
+/* =========================
+   MOBILE
+========================= */
 
-    main {
-        padding: 0 20px;
-    }
+@media (max-width: 768px) {
 
-    nav {
-        padding: 15px 20px;
-    }
-
-    nav div {
+    .nav-container {
+        flex-direction: column;
         gap: 15px;
     }
 
-    .hero h1 {
-        font-size: 38px;
+    .nav-links {
+        gap: 18px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    .intro {
+    .hero {
+        min-height: auto;
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
         font-size: 18px;
     }
 
-    .buttons {
-        flex-direction: column;
-        width: 100%;
+    .section {
+        padding: 75px 0;
     }
 
-    .button {
-        text-align: center;
+    .section h2 {
+        font-size: 36px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .about-highlight p {
+        font-size: 20px;
+    }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 88%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section h2 {
+        font-size: 31px;
+    }
+
+    .project-card {
+        padding: 25px;
+    }
+
+    .about-highlight {
+        padding: 22px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
     }
 
 }
