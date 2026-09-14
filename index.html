@@ -15,60 +15,69 @@
     <nav>
         <div class="container nav-container">
 
-            <a href="#" class="logo">Jonah Peter</a>
+            <a href="index.html" class="logo">
+                Jonah Peter
+            </a>
 
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#writing">Writing</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#writing">Writing</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
 
         </div>
     </nav>
 
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <header class="hero">
+
         <div class="container hero-content">
 
-            <p class="hero-intro">Hello, I'm Jonah.</p>
-
-            <h1>Data Analyst</h1>
-
-            <p class="hero-description">
-                I enjoy asking questions, digging into data, and understanding
-                the problems behind the numbers.
+            <p class="hero-greeting">
+                Hello, I'm Jonah.
             </p>
 
-            <a href="#projects" class="button">
-                Explore My Work
+            <h1>
+                Data Analyst
+            </h1>
+
+            <p class="hero-description">
+                I'm interested in understanding problems, uncovering patterns,
+                and finding the story behind the numbers.
+            </p>
+
+            <a href="#projects" class="button primary-button">
+                View My Projects
             </a>
 
         </div>
+
     </header>
 
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="section">
+
         <div class="container">
 
             <div class="section-heading">
-                <p class="section-label">ABOUT ME</p>
-                <h2>Curious about the story behind the data.</h2>
+                <p class="section-label">About Me</p>
+                <h2>A little about how I approach data.</h2>
             </div>
 
             <div class="about-content">
 
-                <p class="about-opening">
-                    I’m a Data Analyst who enjoys asking questions.
+                <p>
+                    I'm a Data Analyst who enjoys asking questions.
                 </p>
 
                 <p>
                     My approach to analysis revolves around identifying common
                     or recurring problems, digging into the data, and figuring
-                    out why they are happening. I’m less interested in simply
+                    out why they are happening. I'm less interested in simply
                     reporting <em>what</em> happened and more interested in
                     understanding the story behind it — what changed, what
                     might be causing it, and where the problem actually lies.
@@ -78,7 +87,7 @@
                     My toolkit includes Excel, SQL, Python, Power BI, and an
                     unhealthy amount of curiosity. I enjoy the entire process
                     of working with data — from cleaning the wonderfully
-                    chaotic stuff that people insist is “ready to analyse,”
+                    chaotic stuff that people insist is "ready to analyse,"
                     to building dashboards and reports that make the final
                     answer easier to understand.
                 </p>
@@ -86,245 +95,293 @@
                 <p>
                     I'm constantly learning, experimenting, and finding new
                     ways to approach problems — while of course, occasionally
-                    discovering that the reason my analysis wasn't working was
-                    because I forgot one comma three hours ago.
+                    discovering that the reason my analysis wasn't working
+                    was because I forgot one comma three hours ago.
                 </p>
 
-                <div class="about-highlight">
-                    <p>
-                        Data can tell you what happened.
-                        <strong>I want to know why.</strong>
-                    </p>
-                </div>
+                <p class="about-ending">
+                    Data can tell you what happened. I want to know why.
+                </p>
 
             </div>
 
         </div>
+
     </section>
 
 
-    <!-- Projects Section -->
-    <section id="projects" class="section section-light">
+    <!-- Projects -->
+    <section id="projects" class="section projects-section">
+
         <div class="container">
 
             <div class="section-heading">
-                <p class="section-label">MY WORK</p>
+                <p class="section-label">Selected Work</p>
                 <h2>Projects</h2>
-
-                <p class="section-intro">
-                    A collection of projects where I use data to investigate
-                    questions, uncover patterns, and find meaningful insights.
+                <p>
+                    A collection of data projects where I explore problems,
+                    work through the data, and turn the results into
+                    understandable insights.
                 </p>
             </div>
 
 
-            <div class="project-grid">
+            <!-- Project 1 -->
+            <article class="project-card">
 
-                <!-- Project 1 -->
-                <article class="project-card">
+                <div class="project-number">
+                    01
+                </div>
 
-                    <div class="project-number">01</div>
+                <div class="project-content">
 
-                    <h3>Nigerian Health Inequality Analysis</h3>
-
-                    <p>
-                        An analysis exploring health inequality in Nigeria,
-                        investigating differences in health outcomes and the
-                        factors that may contribute to them.
+                    <p class="project-category">
+                        Data Analytics · SQL · Power BI
                     </p>
 
-                    <div class="project-tools">
-                        <span>Data Analysis</span>
-                        <span>Visualization</span>
-                        <span>Research</span>
-                    </div>
+                    <h3>
+                        Health Inequality in Nigeria:
+                        A Child Nutrition Analysis
+                    </h3>
+
+                    <p>
+                        An end-to-end data analytics project analyzing child
+                        nutrition inequalities in Nigeria using WHO Global
+                        Health Observatory data. The analysis explores how
+                        wealth, educational attainment, and place of residence
+                        are associated with childhood nutrition outcomes.
+                    </p>
 
                     <div class="project-links">
-                        <a href="#" class="text-link">
+
+                        <a
+                            href="project-1.html"
+                            class="project-link primary-project-link"
+                        >
                             View Project →
                         </a>
 
-                        <a href="#" class="text-link">
+                        <a
+                            href="https://medium.com/@Lagoju/behind-the-scenes-health-inequality-in-nigeria-a-child-nutrition-analysis-4e0bc74fcf6e"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
                             Medium Article →
                         </a>
+
+                        <a
+                            href="https://github.com/Lagoju/health-inequality-nigeria-analysis"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            View on GitHub →
+                        </a>
+
                     </div>
 
-                </article>
+                </div>
+
+            </article>
 
 
-                <!-- Project 2 -->
-                <article class="project-card">
+            <!-- Project 2 -->
+            <article class="project-card">
 
-                    <div class="project-number">02</div>
+                <div class="project-number">
+                    02
+                </div>
 
-                    <h3>NPFL Data Analytics</h3>
+                <div class="project-content">
 
-                    <p>
-                        A data analysis project exploring trends, patterns,
-                        and insights from the Nigerian Professional Football
-                        League.
+                    <p class="project-category">
+                        Data Analytics
                     </p>
 
-                    <div class="project-tools">
-                        <span>Data Analysis</span>
-                        <span>Sports Analytics</span>
-                        <span>Visualization</span>
-                    </div>
+                    <h3>
+                        NPFL Data Analytics
+                    </h3>
+
+                    <p>
+                        An analysis of Nigerian Professional Football League
+                        data, exploring performance patterns, team statistics,
+                        and other insights from the league.
+                    </p>
 
                     <div class="project-links">
-                        <a href="#" class="text-link">
+
+                        <a
+                            href="#"
+                            class="project-link primary-project-link"
+                        >
                             View Project →
                         </a>
 
-                        <a href="#" class="text-link">
+                        <a
+                            href="#"
+                            class="project-link"
+                        >
                             Medium Article →
                         </a>
+
                     </div>
-
-                </article>
-
-
-                <!-- Project 3 -->
-                <article class="project-card">
-
-                    <div class="project-number">03</div>
-
-                    <h3>Project Three</h3>
-
-                    <p>
-                        A new data analysis project currently in progress.
-                        Details coming soon.
-                    </p>
-
-                    <div class="project-tools">
-                        <span>Coming Soon</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="#" class="text-link">
-                            Coming Soon →
-                        </a>
-                    </div>
-
-                </article>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Writing Section -->
-    <section id="writing" class="section">
-        <div class="container">
-
-            <div class="writing-layout">
-
-                <div class="section-heading">
-                    <p class="section-label">WRITING</p>
-
-                    <h2>
-                        I write about the projects I work on.
-                    </h2>
-                </div>
-
-                <div class="writing-content">
-
-                    <p>
-                        Analysis doesn't end when the numbers make sense.
-                        I also enjoy writing about the process — the questions
-                        I started with, what I discovered, and the story the
-                        data revealed.
-                    </p>
-
-                    <p>
-                        I publish articles about my projects on Medium,
-                        breaking down the analysis and sharing the thinking
-                        behind the results.
-                    </p>
-
-                    <a href="#" class="button">
-                        Read My Articles
-                    </a>
 
                 </div>
 
-            </div>
+            </article>
+
+
+            <!-- Project 3 -->
+            <article class="project-card">
+
+                <div class="project-number">
+                    03
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-category">
+                        Coming Soon
+                    </p>
+
+                    <h3>
+                        Project Three
+                    </h3>
+
+                    <p>
+                        Another data project is currently in progress.
+                        More details will be added soon.
+                    </p>
+
+                </div>
+
+            </article>
 
         </div>
+
     </section>
 
 
-    <!-- Skills Section -->
-    <section id="skills" class="section section-light">
+    <!-- Writing -->
+    <section id="writing" class="section writing-section">
+
+        <div class="container writing-container">
+
+            <div class="section-heading">
+                <p class="section-label">Writing</p>
+
+                <h2>
+                    I write about the projects I work on.
+                </h2>
+            </div>
+
+            <p>
+                Some projects don't end when the dashboard is finished.
+                I write about the process behind my analyses — the questions
+                I started with, the problems I encountered, and what the data
+                ultimately revealed.
+            </p>
+
+            <a
+                href="#"
+                class="button primary-button"
+            >
+                Read My Articles
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+
         <div class="container">
 
             <div class="section-heading">
-                <p class="section-label">TOOLKIT</p>
+                <p class="section-label">Toolkit</p>
                 <h2>Skills & Tools</h2>
             </div>
 
             <div class="skills-list">
 
-                <span>Excel</span>
-                <span>SQL</span>
-                <span>Python</span>
-                <span>Power BI</span>
-                <span>Pandas</span>
-                <span>Data Cleaning</span>
-                <span>Exploratory Data Analysis</span>
-                <span>Data Visualization</span>
+                <span class="skill-tag">Excel</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Power BI</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">Data Cleaning</span>
+                <span class="skill-tag">Exploratory Data Analysis</span>
+                <span class="skill-tag">Data Visualization</span>
 
             </div>
 
         </div>
+
     </section>
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-        <div class="container contact-content">
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
 
-            <p class="section-label">GET IN TOUCH</p>
+        <div class="container contact-container">
 
-            <h2>Let's Connect</h2>
+            <p class="section-label">
+                Contact
+            </p>
+
+            <h2>
+                Let's connect.
+            </h2>
 
             <p>
-                Interested in my work, my analysis, or just want to connect?
-                Feel free to reach out.
+                I'm always open to connecting with people interested in
+                data, analytics, and interesting problems.
             </p>
 
             <div class="contact-links">
 
-                <a href="#" class="button">
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     LinkedIn
                 </a>
 
-                <a href="mailto:your@email.com" class="button">
-                    Email Me
+                <a href="mailto:your-email@example.com">
+                    Email
                 </a>
 
-                <a href="#" class="button">
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     Medium
                 </a>
 
             </div>
 
         </div>
+
     </section>
 
 
     <!-- Footer -->
     <footer>
+
         <div class="container">
 
             <p>
-                © 2026 Jonah Peter.
+                © 2026 Jonah Peter. All rights reserved.
             </p>
 
         </div>
-    </footer>
 
+    </footer>
 
 </body>
 </html>
