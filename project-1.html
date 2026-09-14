@@ -4,103 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Jonah Peter | Data Analyst</title>
+    <title>Health Inequality in Nigeria | Jonah Peter</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-1.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
     <nav>
-        <div class="container nav-container">
+        <div class="nav-container">
 
             <a href="index.html" class="logo">
                 Jonah Peter
             </a>
 
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#writing">Writing</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#writing">Writing</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
 
         </div>
     </nav>
 
 
-    <!-- Hero -->
-    <header class="hero">
+    <!-- =========================
+         PROJECT HERO
+    ========================== -->
 
-        <div class="container hero-content">
+    <header class="project-hero">
 
-            <p class="hero-greeting">
-                Hello, I'm Jonah.
+        <div class="container">
+
+            <p class="project-label">
+                DATA ANALYTICS PROJECT
             </p>
 
             <h1>
-                Data Analyst
+                Health Inequality in Nigeria:
+                A Child Nutrition Analysis
             </h1>
 
-            <p class="hero-description">
-                I'm interested in understanding problems, uncovering patterns,
-                and finding the story behind the numbers.
+            <p class="project-intro">
+                An end-to-end data analytics project analyzing child nutrition
+                inequalities in Nigeria using WHO Global Health Observatory data.
+                The project explores how wealth, educational attainment, and
+                place of residence influence childhood nutrition outcomes through
+                SQL analysis and an interactive Power BI dashboard.
             </p>
 
-            <a href="#projects" class="button primary-button">
-                View My Projects
-            </a>
+            <div class="project-buttons">
+
+                <a
+                    href="https://medium.com/@Lagoju/behind-the-scenes-health-inequality-in-nigeria-a-child-nutrition-analysis-4e0bc74fcf6e"
+                    target="_blank"
+                    class="btn btn-primary"
+                >
+                    Read the Medium Article →
+                </a>
+
+                <a
+                    href="https://github.com/Lagoju/health-inequality-nigeria-analysis"
+                    target="_blank"
+                    class="btn btn-secondary"
+                >
+                    View on GitHub →
+                </a>
+
+                <a
+                    href="index.html#projects"
+                    class="btn btn-back"
+                >
+                    ← Back to Projects
+                </a>
+
+            </div>
 
         </div>
 
     </header>
 
 
-    <!-- About -->
-    <section id="about" class="section">
+    <!-- =========================
+         PROJECT OVERVIEW
+    ========================== -->
+
+    <section>
 
         <div class="container">
 
-            <div class="section-heading">
-                <p class="section-label">About Me</p>
-                <h2>A little about how I approach data.</h2>
-            </div>
+            <h2>Project Overview</h2>
 
-            <div class="about-content">
+            <div class="content">
 
                 <p>
-                    I'm a Data Analyst who enjoys asking questions.
+                    Child malnutrition is a major public health challenge in
+                    Nigeria. However, national averages can hide significant
+                    differences between socioeconomic groups.
                 </p>
 
                 <p>
-                    My approach to analysis revolves around identifying common
-                    or recurring problems, digging into the data, and figuring
-                    out why they are happening. I'm less interested in simply
-                    reporting <em>what</em> happened and more interested in
-                    understanding the story behind it — what changed, what
-                    might be causing it, and where the problem actually lies.
+                    This project examines childhood nutrition outcomes across
+                    three major indicators:
+                </p>
+
+                <ul>
+                    <li>Stunting</li>
+                    <li>Underweight</li>
+                    <li>Wasting</li>
+                </ul>
+
+                <p>
+                    The analysis focuses on three dimensions of inequality:
+                    household wealth, educational attainment, and place of
+                    residence.
                 </p>
 
                 <p>
-                    My toolkit includes Excel, SQL, Python, Power BI, and an
-                    unhealthy amount of curiosity. I enjoy the entire process
-                    of working with data — from cleaning the wonderfully
-                    chaotic stuff that people insist is "ready to analyse,"
-                    to building dashboards and reports that make the final
-                    answer easier to understand.
-                </p>
-
-                <p>
-                    I'm constantly learning, experimenting, and finding new
-                    ways to approach problems — while of course, occasionally
-                    discovering that the reason my analysis wasn't working
-                    was because I forgot one comma three hours ago.
-                </p>
-
-                <p class="about-ending">
-                    Data can tell you what happened. I want to know why.
+                    The objective was to transform raw WHO health data into
+                    meaningful insights that could support evidence-based
+                    decision-making.
                 </p>
 
             </div>
@@ -110,211 +139,405 @@
     </section>
 
 
-    <!-- Projects -->
-    <section id="projects" class="section projects-section">
+    <!-- =========================
+         BUSINESS PROBLEM
+    ========================== -->
+
+    <section class="light-section">
 
         <div class="container">
 
-            <div class="section-heading">
-                <p class="section-label">Selected Work</p>
-                <h2>Projects</h2>
-                <p>
-                    A collection of data projects where I explore problems,
-                    work through the data, and turn the results into
-                    understandable insights.
-                </p>
-            </div>
+            <h2>Business Problem</h2>
 
-
-            <!-- Project 1 -->
-            <article class="project-card">
-
-                <div class="project-number">
-                    01
-                </div>
-
-                <div class="project-content">
-
-                    <p class="project-category">
-                        Data Analytics · SQL · Power BI
-                    </p>
-
-                    <h3>
-                        Health Inequality in Nigeria:
-                        A Child Nutrition Analysis
-                    </h3>
-
-                    <p>
-                        An end-to-end data analytics project analyzing child
-                        nutrition inequalities in Nigeria using WHO Global
-                        Health Observatory data. The analysis explores how
-                        wealth, educational attainment, and place of residence
-                        are associated with childhood nutrition outcomes.
-                    </p>
-
-                    <div class="project-links">
-
-                        <a
-                            href="project-1.html"
-                            class="project-link primary-project-link"
-                        >
-                            View Project →
-                        </a>
-
-                        <a
-                            href="https://medium.com/@Lagoju/behind-the-scenes-health-inequality-in-nigeria-a-child-nutrition-analysis-4e0bc74fcf6e"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="project-link"
-                        >
-                            Medium Article →
-                        </a>
-
-                        <a
-                            href="https://github.com/Lagoju/health-inequality-nigeria-analysis"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="project-link"
-                        >
-                            View on GitHub →
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- Project 2 -->
-            <article class="project-card">
-
-                <div class="project-number">
-                    02
-                </div>
-
-                <div class="project-content">
-
-                    <p class="project-category">
-                        Data Analytics
-                    </p>
-
-                    <h3>
-                        NPFL Data Analytics
-                    </h3>
-
-                    <p>
-                        An analysis of Nigerian Professional Football League
-                        data, exploring performance patterns, team statistics,
-                        and other insights from the league.
-                    </p>
-
-                    <div class="project-links">
-
-                        <a
-                            href="#"
-                            class="project-link primary-project-link"
-                        >
-                            View Project →
-                        </a>
-
-                        <a
-                            href="#"
-                            class="project-link"
-                        >
-                            Medium Article →
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- Project 3 -->
-            <article class="project-card">
-
-                <div class="project-number">
-                    03
-                </div>
-
-                <div class="project-content">
-
-                    <p class="project-category">
-                        Coming Soon
-                    </p>
-
-                    <h3>
-                        Project Three
-                    </h3>
-
-                    <p>
-                        Another data project is currently in progress.
-                        More details will be added soon.
-                    </p>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- Writing -->
-    <section id="writing" class="section writing-section">
-
-        <div class="container writing-container">
-
-            <div class="section-heading">
-                <p class="section-label">Writing</p>
-
-                <h2>
-                    I write about the projects I work on.
-                </h2>
-            </div>
-
-            <p>
-                Some projects don't end when the dashboard is finished.
-                I write about the process behind my analyses — the questions
-                I started with, the problems I encountered, and what the data
-                ultimately revealed.
+            <p class="section-intro">
+                The analysis was designed to answer several key questions.
             </p>
 
-            <a
-                href="#"
-                class="button primary-button"
-            >
-                Read My Articles
-            </a>
+            <div class="questions-grid">
+
+                <div class="question-card">
+                    <h3>01</h3>
+                    <p>
+                        Which socioeconomic factor has the strongest association
+                        with child malnutrition?
+                    </p>
+                </div>
+
+                <div class="question-card">
+                    <h3>02</h3>
+                    <p>
+                        How large are nutrition disparities between the poorest
+                        and richest households?
+                    </p>
+                </div>
+
+                <div class="question-card">
+                    <h3>03</h3>
+                    <p>
+                        Does educational attainment influence nutrition outcomes?
+                    </p>
+                </div>
+
+                <div class="question-card">
+                    <h3>04</h3>
+                    <p>
+                        Are rural communities disproportionately affected?
+                    </p>
+                </div>
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- Skills -->
-    <section id="skills" class="section">
+    <!-- =========================
+         DATA & TOOLS
+    ========================== -->
+
+    <section>
 
         <div class="container">
 
-            <div class="section-heading">
-                <p class="section-label">Toolkit</p>
-                <h2>Skills & Tools</h2>
+            <div class="two-column">
+
+                <div>
+
+                    <h2>Dataset</h2>
+
+                    <p>
+                        The project uses data from the
+                        <strong>WHO Global Health Observatory (GHO)</strong>,
+                        focusing on Nigeria from 2018–2022.
+                    </p>
+
+                    <p>
+                        The original dataset contained approximately
+                        <strong>25,909 rows</strong>. After cleaning and
+                        filtering, only the relevant child nutrition indicators
+                        were retained for analysis.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h2>Tools</h2>
+
+                    <ul class="tools-list">
+                        <li><strong>Excel</strong> — Data auditing and validation</li>
+                        <li><strong>SQL Server</strong> — Data cleaning and analysis</li>
+                        <li><strong>Power BI</strong> — Dashboard development</li>
+                        <li><strong>DAX</strong> — KPI calculations and measures</li>
+                        <li><strong>GitHub</strong> — Documentation and version control</li>
+                    </ul>
+
+                </div>
+
             </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         WORKFLOW
+    ========================== -->
+
+    <section class="light-section">
+
+        <div class="container">
+
+            <h2>Analytical Workflow</h2>
+
+            <div class="workflow">
+
+                <div class="workflow-step">
+                    <span>01</span>
+                    <p>Raw WHO Dataset</p>
+                </div>
+
+                <div class="workflow-arrow">↓</div>
+
+                <div class="workflow-step">
+                    <span>02</span>
+                    <p>Excel Data Audit</p>
+                </div>
+
+                <div class="workflow-arrow">↓</div>
+
+                <div class="workflow-step">
+                    <span>03</span>
+                    <p>SQL Data Cleaning</p>
+                </div>
+
+                <div class="workflow-arrow">↓</div>
+
+                <div class="workflow-step">
+                    <span>04</span>
+                    <p>Indicator Validation</p>
+                </div>
+
+                <div class="workflow-arrow">↓</div>
+
+                <div class="workflow-step">
+                    <span>05</span>
+                    <p>Exploratory SQL Analysis</p>
+                </div>
+
+                <div class="workflow-arrow">↓</div>
+
+                <div class="workflow-step">
+                    <span>06</span>
+                    <p>Power BI Dashboard</p>
+                </div>
+
+                <div class="workflow-arrow">↓</div>
+
+                <div class="workflow-step">
+                    <span>07</span>
+                    <p>Executive Insights & Recommendations</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         KEY FINDINGS
+    ========================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>Key Findings</h2>
+
+            <p class="section-intro">
+                The analysis revealed clear inequalities across wealth,
+                educational attainment, and place of residence.
+            </p>
+
+            <div class="findings-grid">
+
+                <div class="finding-card">
+                    <span class="finding-number">01</span>
+
+                    <h3>Wealth Inequality</h3>
+
+                    <p>
+                        Children from the poorest households experienced
+                        stunting prevalence more than three times higher than
+                        children from the richest households.
+                    </p>
+                </div>
+
+
+                <div class="finding-card">
+                    <span class="finding-number">02</span>
+
+                    <h3>Education Inequality</h3>
+
+                    <p>
+                        Educational attainment showed the strongest association
+                        with child nutrition outcomes in this analysis.
+                    </p>
+
+                    <p>
+                        Children associated with no education experienced
+                        approximately 4.5× higher stunting prevalence than
+                        those associated with higher education.
+                    </p>
+                </div>
+
+
+                <div class="finding-card">
+                    <span class="finding-number">03</span>
+
+                    <h3>Rural vs Urban</h3>
+
+                    <p>
+                        Rural communities consistently recorded worse nutrition
+                        outcomes than urban communities across all major
+                        indicators.
+                    </p>
+                </div>
+
+
+                <div class="finding-card">
+                    <span class="finding-number">04</span>
+
+                    <h3>Overall Nutrition Challenge</h3>
+
+                    <p>
+                        Stunting emerged as the most severe nutrition challenge,
+                        followed by underweight and wasting.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DASHBOARD
+    ========================== -->
+
+    <section class="dashboard-section">
+
+        <div class="container">
+
+            <h2>Power BI Dashboard</h2>
+
+            <p class="section-intro">
+                The dashboard translates the analysis into an interactive
+                visual story, allowing users to explore nutrition inequalities
+                across different socioeconomic groups.
+            </p>
+
+
+            <div class="dashboard-image">
+
+                <img
+                    src="images/project-1-health-inequality/executive-summary.png"
+                    alt="Health inequality executive summary dashboard"
+                >
+
+                <p class="image-caption">
+                    Executive Summary
+                </p>
+
+            </div>
+
+
+            <div class="dashboard-image">
+
+                <img
+                    src="images/project-1-health-inequality/wealth-inequality.png"
+                    alt="Wealth inequality dashboard"
+                >
+
+                <p class="image-caption">
+                    Wealth Inequality
+                </p>
+
+            </div>
+
+
+            <div class="dashboard-image">
+
+                <img
+                    src="images/project-1-health-inequality/educational-inequality.png"
+                    alt="Educational inequality dashboard"
+                >
+
+                <p class="image-caption">
+                    Education Inequality
+                </p>
+
+            </div>
+
+
+            <div class="dashboard-image">
+
+                <img
+                    src="images/project-1-health-inequality/residence-inequality.png"
+                    alt="Rural versus urban inequality dashboard"
+                >
+
+                <p class="image-caption">
+                    Rural vs Urban Inequality
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         RECOMMENDATIONS
+    ========================== -->
+
+    <section class="light-section">
+
+        <div class="container">
+
+            <h2>Recommendations</h2>
+
+            <div class="recommendations">
+
+                <div class="recommendation">
+                    <span>01</span>
+
+                    <p>
+                        Prioritize nutrition interventions for low-income
+                        households, which experience substantially higher levels
+                        of child malnutrition.
+                    </p>
+                </div>
+
+
+                <div class="recommendation">
+                    <span>02</span>
+
+                    <p>
+                        Expand maternal, caregiver, and community education
+                        programs, particularly in underserved and rural
+                        communities where nutrition outcomes are consistently
+                        worse.
+                    </p>
+                </div>
+
+
+                <div class="recommendation">
+                    <span>03</span>
+
+                    <p>
+                        Continue monitoring child nutrition indicators through
+                        routine national surveys to track disparities and
+                        evaluate progress over time.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SKILLS DEMONSTRATED
+    ========================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>Skills Demonstrated</h2>
 
             <div class="skills-list">
 
-                <span class="skill-tag">Excel</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">Power BI</span>
-                <span class="skill-tag">Pandas</span>
-                <span class="skill-tag">Data Cleaning</span>
-                <span class="skill-tag">Exploratory Data Analysis</span>
-                <span class="skill-tag">Data Visualization</span>
+                <span>Excel</span>
+                <span>SQL</span>
+                <span>SQL Server</span>
+                <span>Power BI</span>
+                <span>DAX</span>
+                <span>Data Cleaning</span>
+                <span>Exploratory Data Analysis</span>
+                <span>Data Visualization</span>
+                <span>Dashboard Development</span>
+                <span>Data Storytelling</span>
 
             </div>
 
@@ -323,44 +546,39 @@
     </section>
 
 
-    <!-- Contact -->
-    <section id="contact" class="contact-section">
+    <!-- =========================
+         FINAL CTA
+    ========================== -->
 
-        <div class="container contact-container">
+    <section class="final-cta">
 
-            <p class="section-label">
-                Contact
-            </p>
+        <div class="container">
 
             <h2>
-                Let's connect.
+                Want to explore the project further?
             </h2>
 
             <p>
-                I'm always open to connecting with people interested in
-                data, analytics, and interesting problems.
+                Read the full story behind the analysis or explore the project
+                repository and supporting files.
             </p>
 
-            <div class="contact-links">
+            <div class="project-buttons">
 
                 <a
-                    href="#"
+                    href="https://medium.com/@Lagoju/behind-the-scenes-health-inequality-in-nigeria-a-child-nutrition-analysis-4e0bc74fcf6e"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    class="btn btn-primary"
                 >
-                    LinkedIn
-                </a>
-
-                <a href="mailto:your-email@example.com">
-                    Email
+                    Read the Medium Article →
                 </a>
 
                 <a
-                    href="#"
+                    href="https://github.com/Lagoju/health-inequality-nigeria-analysis"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    class="btn btn-secondary"
                 >
-                    Medium
+                    View on GitHub →
                 </a>
 
             </div>
@@ -370,7 +588,10 @@
     </section>
 
 
-    <!-- Footer -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
 
         <div class="container">
