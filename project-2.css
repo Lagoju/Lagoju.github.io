@@ -96,38 +96,21 @@
 .npfl-hero {
     position: relative;
     overflow: hidden;
-
     background:
-        radial-gradient(
-            circle at 85% 20%,
-            rgba(217, 170, 50, 0.16),
-            transparent 28%
-        ),
-        radial-gradient(
-            circle at 10% 80%,
-            rgba(8, 116, 67, 0.13),
-            transparent 30%
-        ),
-        linear-gradient(
-            135deg,
-            #f8fbf9 0%,
-            #edf7f1 100%
-        );
+        radial-gradient(circle at 85% 20%, rgba(217, 170, 50, 0.16), transparent 28%),
+        radial-gradient(circle at 10% 80%, rgba(8, 116, 67, 0.13), transparent 30%),
+        linear-gradient(135deg, #f8fbf9 0%, #edf7f1 100%);
 
     padding: 100px 20px 110px;
 }
 
 .npfl-hero::after {
     content: "";
-
     position: absolute;
-
     width: 420px;
     height: 420px;
-
     border: 1px solid rgba(8, 116, 67, 0.1);
     border-radius: 50%;
-
     right: -180px;
     bottom: -240px;
 }
@@ -142,40 +125,18 @@
     text-align: center;
 }
 
-
-/* =========================================================
-   EUROMATCH NPFL LOGO
-   ========================================================= */
-
 .npfl-logo-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     margin-bottom: 28px;
 }
 
 .npfl-logo {
     width: 210px;
     height: 210px;
-
-    /*
-       IMPORTANT:
-       No white background.
-       No padding.
-       No circular container.
-       No box shadow.
-    */
-
     object-fit: contain;
 
     display: block;
+    margin: 0 auto;
 }
-
-
-/* =========================================================
-   HERO TEXT
-   ========================================================= */
 
 .project-label {
     display: inline-block;
@@ -216,11 +177,6 @@
     line-height: 1.85;
 }
 
-
-/* =========================================================
-   BUTTONS
-   ========================================================= */
-
 .project-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -256,9 +212,7 @@
 .primary-btn {
     color: white;
     background: var(--npfl-green);
-
-    box-shadow:
-        0 10px 25px rgba(8, 116, 67, 0.2);
+    box-shadow: 0 10px 25px rgba(8, 116, 67, 0.2);
 }
 
 .primary-btn:hover {
@@ -268,19 +222,16 @@
 .secondary-btn {
     color: var(--npfl-dark);
     background: white;
-
     border: 1px solid var(--npfl-border);
 }
 
 .secondary-btn:hover {
-    color: var(--npfl-green);
     border-color: var(--npfl-green);
 }
 
 .outline-btn {
     color: var(--npfl-green);
     background: transparent;
-
     border: 1px solid rgba(8, 116, 67, 0.35);
 }
 
@@ -361,8 +312,7 @@
     border: 1px solid var(--npfl-border);
     border-radius: 14px;
 
-    box-shadow:
-        0 8px 25px rgba(16, 35, 26, 0.04);
+    box-shadow: 0 8px 25px rgba(16, 35, 26, 0.04);
 }
 
 .stat-card strong {
@@ -390,7 +340,6 @@
 .content-grid {
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
-
     gap: 55px;
     align-items: start;
 }
@@ -410,8 +359,7 @@
 
     color: white;
 
-    box-shadow:
-        0 20px 50px rgba(16, 35, 26, 0.13);
+    box-shadow: 0 20px 50px rgba(16, 35, 26, 0.13);
 }
 
 .highlight-label {
@@ -463,9 +411,7 @@
 
 .question-card:hover {
     transform: translateY(-4px);
-
-    box-shadow:
-        0 14px 35px rgba(16, 35, 26, 0.08);
+    box-shadow: 0 14px 35px rgba(16, 35, 26, 0.08);
 }
 
 .question-card > span {
@@ -500,22 +446,18 @@
 
 .season-table {
     width: 100%;
-
     border-collapse: collapse;
 
     background: white;
     border: 1px solid var(--npfl-border);
     border-radius: 14px;
-
     overflow: hidden;
 }
 
 .season-table th,
 .season-table td {
     padding: 17px 20px;
-
     text-align: left;
-
     border-bottom: 1px solid var(--npfl-border);
 }
 
@@ -557,13 +499,11 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
     gap: 12px;
 }
 
 .workflow-step {
     flex: 1 1 145px;
-
     min-height: 125px;
 
     display: flex;
@@ -650,7 +590,6 @@
 
 .schema-group {
     padding: 18px 0;
-
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -796,7 +735,6 @@
 
 .correlation-result h3 {
     margin: 0 0 12px;
-
     font-size: 1.35rem;
 }
 
@@ -851,7 +789,6 @@
 .featured-finding {
     background: var(--npfl-green);
     border-color: var(--npfl-green);
-
     color: white;
 }
 
@@ -957,8 +894,7 @@
     border: 1px solid var(--npfl-border);
     border-radius: 16px;
 
-    box-shadow:
-        0 12px 35px rgba(16, 35, 26, 0.06);
+    box-shadow: 0 12px 35px rgba(16, 35, 26, 0.06);
 }
 
 .dashboard-image img {
@@ -1030,7 +966,6 @@
 
 .code-card code {
     color: #d5e5db;
-
     font-family: "Courier New", monospace;
     font-size: 0.82rem;
     line-height: 1.7;
@@ -1145,7 +1080,6 @@
 
 .conclusion-section {
     padding: 110px 0;
-
     background: var(--npfl-dark);
 }
 
@@ -1159,7 +1093,6 @@
 
 .conclusion-card > span {
     color: #b9d7c5;
-
     font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.14em;
@@ -1262,7 +1195,6 @@
 
 .author-card > div:first-child > span {
     color: var(--npfl-green);
-
     font-size: 0.7rem;
     font-weight: 800;
     letter-spacing: 0.12em;
@@ -1320,10 +1252,6 @@
     color: rgba(255, 255, 255, 0.85);
 }
 
-.final-cta .project-buttons {
-    margin-top: 0;
-}
-
 .final-cta .primary-btn {
     background: white;
     color: var(--npfl-dark-green);
@@ -1331,17 +1259,6 @@
 
 .final-cta .primary-btn:hover {
     background: #f4f7f5;
-}
-
-.final-cta .secondary-btn {
-    color: white;
-    background: transparent;
-    border-color: rgba(255, 255, 255, 0.45);
-}
-
-.final-cta .secondary-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: white;
 }
 
 
@@ -1402,7 +1319,6 @@
     .workflow-step {
         flex-basis: 30%;
     }
-
 }
 
 
@@ -1418,7 +1334,6 @@
 
     .nav-container {
         min-height: auto;
-
         padding: 18px 0;
 
         flex-direction: column;
@@ -1431,23 +1346,18 @@
         gap: 12px 18px;
     }
 
-
     .npfl-hero {
         padding: 75px 15px 80px;
     }
 
-
-    /* Logo remains in same position, but scales down for mobile */
     .npfl-logo {
-        width: 150px;
-        height: 150px;
+        width: 170px;
+        height: 170px;
     }
-
 
     .npfl-hero h1 {
         font-size: 2.65rem;
     }
-
 
     .project-buttons {
         flex-direction: column;
@@ -1458,16 +1368,13 @@
         width: 100%;
     }
 
-
     .npfl-section {
         padding: 70px 0;
     }
 
-
     .section-heading {
         margin-bottom: 35px;
     }
-
 
     .stats-grid,
     .question-grid,
@@ -1481,16 +1388,13 @@
         grid-template-columns: 1fr;
     }
 
-
     .content-grid {
         gap: 30px;
     }
 
-
     .highlight-card {
         padding: 28px;
     }
-
 
     .workflow {
         display: grid;
@@ -1502,32 +1406,26 @@
         flex-basis: auto;
     }
 
-
     .dashboard-image figcaption {
         padding: 15px;
     }
-
 
     .author-card {
         flex-direction: column;
         align-items: flex-start;
     }
 
-
     .author-tools {
         justify-content: flex-start;
     }
-
 
     .conclusion-section {
         padding: 80px 0;
     }
 
-
     .conclusion-card h2 {
         font-size: 2.35rem;
     }
-
 }
 
 
@@ -1548,11 +1446,4 @@
     .npfl-hero h1 {
         font-size: 2.35rem;
     }
-
-    .npfl-logo {
-        width: 135px;
-        height: 135px;
-    }
-
 }
-
