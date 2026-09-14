@@ -6,120 +6,94 @@
 
     <title>NPFL Data Analytics | Jonah Peter</title>
 
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="project-2.css">
 </head>
 
-<body>
+<body class="project-page npfl-project">
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
-
-    <nav>
+    <!-- Navigation -->
+    <nav class="project-nav">
         <div class="nav-container">
 
-            <a href="index.html" class="logo">
+            <a href="index.html" class="nav-logo">
                 Jonah Peter
             </a>
 
-            <ul class="nav-links">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#writing">Writing</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
+            <div class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#writing">Writing</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
 
         </div>
     </nav>
 
 
-    <!-- =========================
-         PROJECT HERO
-    ========================== -->
+    <!-- Hero -->
+    <header class="npfl-hero">
 
-    <header class="project-hero">
+        <div class="npfl-hero-content">
 
-        <div class="container">
-
-            <div class="hero-brand">
-
+            <!-- EUROMATCH NPFL LOGO -->
+            <div class="npfl-logo-wrapper">
                 <img
-                    src="images/project-2-npfl-data-analytics/euromatch-npfl-logo.png"
+                    src="images/project-2-npfl-data-analysis/euromatch-npfl-logo.png"
                     alt="EUROMATCH NPFL logo"
                     class="npfl-logo"
                 >
-
-                <div>
-                    <p class="project-label">
-                        SPORTS DATA ANALYTICS
-                    </p>
-
-                    <p class="brand-caption">
-                        NPFL Data Analytics
-                    </p>
-                </div>
-
             </div>
 
+            <span class="project-label">
+                PROJECT 02 · DATA ANALYTICS
+            </span>
 
             <h1>
-                Analysing Geography, Population,
-                Club Performance and League
-                Competitiveness in the NPFL
+                NPFL Data Analytics
             </h1>
 
-
-            <p class="project-intro">
-                A six-season football analytics project examining the
-                relationship between geography, population and club
-                performance in the Nigerian Premier Football League,
-                while also exploring league competitiveness, home
-                advantage, player contribution, stadium environments
-                and match-outcome prediction.
+            <p class="npfl-subtitle">
+                Analysing Geography, Population, Club Performance and League
+                Competitiveness in the Nigerian Premier Football League
             </p>
 
-
-            <div class="hero-stat-grid">
-
-                <div class="hero-stat">
-                    <strong>2,095</strong>
-                    <span>Matches</span>
-                </div>
-
-                <div class="hero-stat">
-                    <strong>4,368</strong>
-                    <span>Goals</span>
-                </div>
-
-                <div class="hero-stat">
-                    <strong>32</strong>
-                    <span>Clubs</span>
-                </div>
-
-                <div class="hero-stat">
-                    <strong>6</strong>
-                    <span>Seasons</span>
-                </div>
-
-            </div>
-
+            <p class="npfl-hero-description">
+                An end-to-end football analytics project investigating how
+                geography, population, club performance, home advantage,
+                player contribution and league competitiveness interact across
+                six seasons of the Nigerian Premier Football League.
+            </p>
 
             <div class="project-buttons">
 
+                <!-- Medium Article -->
                 <a
-                    href="index.html#projects"
-                    class="btn btn-secondary"
+                    href="https://medium.com/@Lagoju/behind-the-scenes-npfl-data-analytics-54745466a57e"
+                    class="project-btn primary-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    ← Back to Projects
+                    Read the Medium Article →
                 </a>
 
+                <!-- GitHub Repository -->
                 <a
-                    href="https://github.com/Lagoju"
+                    href="https://github.com/Lagoju/npfl-data-analytics"
+                    class="project-btn secondary-btn"
                     target="_blank"
-                    class="btn btn-primary"
+                    rel="noopener noreferrer"
                 >
                     View on GitHub →
+                </a>
+
+                <!-- Main Portfolio -->
+                <a
+                    href="index.html#projects"
+                    class="project-btn outline-btn"
+                >
+                    ← Back to Projects
                 </a>
 
             </div>
@@ -129,298 +103,41 @@
     </header>
 
 
-    <!-- =========================
-         CENTRAL QUESTION
-    ========================== -->
+    <!-- At a Glance -->
+    <section class="npfl-section stats-section">
 
-    <section class="question-section">
+        <div class="section-container">
 
-        <div class="container">
-
-            <p class="eyebrow">
-                THE CENTRAL QUESTION
-            </p>
-
-            <h2>
-                Does population and geography explain
-                football performance in the NPFL?
-            </h2>
-
-            <p class="large-text">
-                The analysis suggests that population size alone does not
-                explain club performance. Instead, the strongest patterns
-                emerge around sustained club performance, home advantage,
-                competitive balance, player contribution and the broader
-                sporting environment.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         PROJECT OBJECTIVE
-    ========================== -->
-
-    <section>
-
-        <div class="container">
-
-            <div class="two-column">
-
-                <div>
-
-                    <p class="eyebrow">
-                        PROJECT OBJECTIVE
-                    </p>
-
-                    <h2>
-                        Moving beyond the league table
-                    </h2>
-
-                </div>
-
-                <div class="content">
-
-                    <p>
-                        This project analyses six seasons of NPFL data
-                        from 2020/21 to 2025/26 to investigate the
-                        relationship between geography, population and
-                        football performance.
-                    </p>
-
-                    <p>
-                        The analysis also evaluates league competitiveness,
-                        team and player performance, home advantage,
-                        stadium environments and the potential for
-                        match-outcome prediction.
-                    </p>
-
-                    <p>
-                        The objective was not simply to describe what
-                        happened in the league, but to investigate the
-                        patterns behind performance and identify what the
-                        findings could imply for the wider NPFL ecosystem.
-                    </p>
-
-                </div>
-
+            <div class="section-heading">
+                <span>AT A GLANCE</span>
+                <h2>Six seasons of NPFL data</h2>
             </div>
 
-        </div>
+            <div class="stats-grid">
 
-    </section>
-
-
-    <!-- =========================
-         ANALYTICAL QUESTIONS
-    ========================== -->
-
-    <section class="dark-section">
-
-        <div class="container">
-
-            <p class="eyebrow light-eyebrow">
-                ANALYTICAL QUESTIONS
-            </p>
-
-            <h2 class="white-heading">
-                What was the analysis trying to discover?
-            </h2>
-
-
-            <div class="question-groups">
-
-                <div class="question-group">
-
-                    <h3>Geography & Population</h3>
-
-                    <ul>
-                        <li>Do clubs from more populated states perform better?</li>
-                        <li>Does population size explain differences in club PPG?</li>
-                        <li>Are there meaningful differences between geopolitical zones?</li>
-                        <li>Is there evidence of a simple north-versus-south divide?</li>
-                    </ul>
-
+                <div class="stat-card">
+                    <strong>6</strong>
+                    <span>Seasons analysed</span>
                 </div>
 
-
-                <div class="question-group">
-
-                    <h3>Club Performance</h3>
-
-                    <ul>
-                        <li>Which clubs have been strongest across six seasons?</li>
-                        <li>Which clubs have improved or declined?</li>
-                        <li>Which clubs demonstrate sustained Top-5 performance?</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="question-group">
-
-                    <h3>League Competitiveness</h3>
-
-                    <ul>
-                        <li>Is the gap between stronger and weaker clubs changing?</li>
-                        <li>Is variation in club PPG increasing or decreasing?</li>
-                        <li>Has competitive balance improved?</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="question-group">
-
-                    <h3>Home Advantage</h3>
-
-                    <ul>
-                        <li>How much stronger are clubs at home?</li>
-                        <li>Which clubs have the largest home/away PPG differences?</li>
-                        <li>Does home advantage remain consistent across seasons?</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="question-group">
-
-                    <h3>Player Performance</h3>
-
-                    <ul>
-                        <li>Who are the leading goal scorers?</li>
-                        <li>How does scoring relate to appearances?</li>
-                        <li>Which players demonstrate strong scoring efficiency?</li>
-                        <li>Which positions contribute most to goals?</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="question-group">
-
-                    <h3>Stadium & Match Environment</h3>
-
-                    <ul>
-                        <li>Which stadiums host the most matches?</li>
-                        <li>Does stadium capacity correspond with match usage?</li>
-                        <li>Which stadiums have higher average goals per match?</li>
-                        <li>Which stadiums show the strongest home advantage?</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="question-group full-question">
-
-                    <h3>Predictive Modelling</h3>
-
-                    <ul>
-                        <li>
-                            Which match-performance variables are most useful
-                            for predicting match outcomes?
-                        </li>
-
-                        <li>
-                            Can historical team and match statistics meaningfully
-                            distinguish home wins, draws and away wins?
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         DATASET
-    ========================== -->
-
-    <section>
-
-        <div class="container">
-
-            <p class="eyebrow">
-                DATASET
-            </p>
-
-            <h2>
-                Six seasons of NPFL football
-            </h2>
-
-            <p class="section-intro">
-                The analysis covers six NPFL seasons from 2020/21 to
-                2025/26. The 2022/23 season is treated separately where
-                appropriate because it was an abridged season.
-            </p>
-
-
-            <div class="season-table">
-
-                <div class="table-header">
-                    <span>Season</span>
-                    <span>Coverage</span>
-                </div>
-
-                <div class="table-row">
-                    <span>2020/21</span>
-                    <span>Included</span>
-                </div>
-
-                <div class="table-row">
-                    <span>2021/22</span>
-                    <span>Included</span>
-                </div>
-
-                <div class="table-row">
-                    <span>2022/23</span>
-                    <span>Abridged season</span>
-                </div>
-
-                <div class="table-row">
-                    <span>2023/24</span>
-                    <span>Included</span>
-                </div>
-
-                <div class="table-row">
-                    <span>2024/25</span>
-                    <span>Included</span>
-                </div>
-
-                <div class="table-row">
-                    <span>2025/26</span>
-                    <span>Included</span>
-                </div>
-
-            </div>
-
-
-            <div class="metric-grid">
-
-                <div class="metric-card">
+                <div class="stat-card">
                     <strong>2,095</strong>
                     <span>Matches</span>
                 </div>
 
-                <div class="metric-card">
+                <div class="stat-card">
                     <strong>4,368</strong>
                     <span>Goals</span>
                 </div>
 
-                <div class="metric-card">
+                <div class="stat-card">
                     <strong>32</strong>
                     <span>Clubs</span>
                 </div>
 
-                <div class="metric-card">
+                <div class="stat-card">
                     <strong>2.08</strong>
-                    <span>Goals per Match</span>
+                    <span>Goals per match</span>
                 </div>
 
             </div>
@@ -430,68 +147,270 @@
     </section>
 
 
-    <!-- =========================
-         DATA ARCHITECTURE
-    ========================== -->
+    <!-- Overview -->
+    <section class="npfl-section">
 
-    <section class="light-section">
+        <div class="section-container">
 
-        <div class="container">
+            <div class="section-heading">
+                <span>01 · OVERVIEW</span>
+                <h2>Does population explain football performance?</h2>
+            </div>
 
-            <p class="eyebrow">
-                DATA ARCHITECTURE
+            <div class="content-grid">
+
+                <div class="content-column">
+
+                    <p>
+                        The Nigerian Premier Football League (NPFL) is the
+                        highest level of domestic professional football in
+                        Nigeria.
+                    </p>
+
+                    <p>
+                        This project analyses six seasons of NPFL data from
+                        2020/21 to 2025/26 to investigate the relationship
+                        between geography, population, club performance,
+                        league competitiveness, player contribution and
+                        stadium environments.
+                    </p>
+
+                    <p>
+                        The central question was straightforward:
+                        <strong>
+                            does population and geography explain football
+                            performance in the NPFL, or are other sporting and
+                            structural factors more important?
+                        </strong>
+                    </p>
+
+                </div>
+
+                <div class="highlight-card">
+
+                    <span class="highlight-label">
+                        THE CENTRAL QUESTION
+                    </span>
+
+                    <h3>
+                        Bigger population ≠ automatically better football
+                        performance.
+                    </h3>
+
+                    <p>
+                        The analysis found no statistically significant
+                        relationship between population and club performance
+                        in the sample.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Project Objective -->
+    <section class="npfl-section alternate-section">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+                <span>02 · OBJECTIVE</span>
+                <h2>Questions this project set out to answer</h2>
+            </div>
+
+            <div class="question-grid">
+
+                <div class="question-card">
+                    <span>01</span>
+                    <h3>Geography & Population</h3>
+                    <p>
+                        Are clubs from larger populations more successful?
+                        Do geographic regions show meaningful differences?
+                    </p>
+                </div>
+
+                <div class="question-card">
+                    <span>02</span>
+                    <h3>Club Performance</h3>
+                    <p>
+                        Which clubs consistently perform at a high level, and
+                        which clubs have improved or declined?
+                    </p>
+                </div>
+
+                <div class="question-card">
+                    <span>03</span>
+                    <h3>League Competitiveness</h3>
+                    <p>
+                        Is the gap between stronger and weaker teams changing
+                        across seasons?
+                    </p>
+                </div>
+
+                <div class="question-card">
+                    <span>04</span>
+                    <h3>Home Advantage</h3>
+                    <p>
+                        How large is the difference between home and away
+                        performance?
+                    </p>
+                </div>
+
+                <div class="question-card">
+                    <span>05</span>
+                    <h3>Player Contribution</h3>
+                    <p>
+                        Which positions contribute most to goals and how does
+                        scoring efficiency vary?
+                    </p>
+                </div>
+
+                <div class="question-card">
+                    <span>06</span>
+                    <h3>Stadium Environment</h3>
+                    <p>
+                        How do stadium usage, capacity and goal patterns relate
+                        to the matchday environment?
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Dataset Scope -->
+    <section class="npfl-section">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+                <span>03 · DATA</span>
+                <h2>Dataset scope</h2>
+            </div>
+
+            <div class="season-table-wrapper">
+
+                <table class="season-table">
+
+                    <thead>
+                        <tr>
+                            <th>Season</th>
+                            <th>Included</th>
+                            <th>Note</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>2020/21</td>
+                            <td>✓</td>
+                            <td>Included</td>
+                        </tr>
+
+                        <tr>
+                            <td>2021/22</td>
+                            <td>✓</td>
+                            <td>Included</td>
+                        </tr>
+
+                        <tr>
+                            <td>2022/23</td>
+                            <td>✓</td>
+                            <td>Abridged season</td>
+                        </tr>
+
+                        <tr>
+                            <td>2023/24</td>
+                            <td>✓</td>
+                            <td>Included</td>
+                        </tr>
+
+                        <tr>
+                            <td>2024/25</td>
+                            <td>✓</td>
+                            <td>Included</td>
+                        </tr>
+
+                        <tr>
+                            <td>2025/26</td>
+                            <td>✓</td>
+                            <td>Included</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <p class="small-note">
+                The 2022/23 season was treated separately where appropriate
+                because it was an abridged season.
             </p>
 
-            <h2>
-                From licensed football data to analytical insight
-            </h2>
+        </div>
 
-            <div class="architecture">
+    </section>
 
-                <div class="architecture-step">
+
+    <!-- Data Architecture -->
+    <section class="npfl-section alternate-section">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+                <span>04 · DATA ARCHITECTURE</span>
+                <h2>From raw football data to insights</h2>
+            </div>
+
+            <div class="workflow">
+
+                <div class="workflow-step">
                     <span>01</span>
                     <strong>Licensed Football Data</strong>
-                    <p>Source datasets obtained through a paid FootyStats subscription.</p>
                 </div>
 
-                <div class="architecture-arrow">↓</div>
+                <div class="workflow-arrow">→</div>
 
-                <div class="architecture-step">
+                <div class="workflow-step">
                     <span>02</span>
                     <strong>Data Cleaning & Preparation</strong>
-                    <p>Data-quality assessment, cleaning and feature preparation.</p>
                 </div>
 
-                <div class="architecture-arrow">↓</div>
+                <div class="workflow-arrow">→</div>
 
-                <div class="architecture-step">
+                <div class="workflow-step">
                     <span>03</span>
                     <strong>SQL Server Data Warehouse</strong>
-                    <p>Structured relational warehouse using staging, dimensions and facts.</p>
                 </div>
 
-                <div class="architecture-arrow">↓</div>
+                <div class="workflow-arrow">→</div>
 
-                <div class="architecture-step">
+                <div class="workflow-step">
                     <span>04</span>
                     <strong>Python Statistical Analysis</strong>
-                    <p>Exploration, correlations, competitiveness, player analysis and modelling.</p>
                 </div>
 
-                <div class="architecture-arrow">↓</div>
+                <div class="workflow-arrow">→</div>
 
-                <div class="architecture-step">
+                <div class="workflow-step">
                     <span>05</span>
-                    <strong>Power BI / DAX</strong>
-                    <p>Interactive reporting, ranking logic and season-aware measures.</p>
+                    <strong>Power BI & DAX</strong>
                 </div>
 
-                <div class="architecture-arrow">↓</div>
+                <div class="workflow-arrow">→</div>
 
-                <div class="architecture-step">
+                <div class="workflow-step">
                     <span>06</span>
-                    <strong>Analytical Report</strong>
-                    <p>Insights, recommendations and strategic implications.</p>
+                    <strong>Insights & Recommendations</strong>
                 </div>
 
             </div>
@@ -501,84 +420,85 @@
     </section>
 
 
-    <!-- =========================
-         SQL WAREHOUSE
-    ========================== -->
+    <!-- SQL -->
+    <section class="npfl-section">
 
-    <section>
+        <div class="section-container">
 
-        <div class="container">
+            <div class="section-heading">
+                <span>05 · SQL SERVER</span>
+                <h2>Building the analytical warehouse</h2>
+            </div>
 
-            <div class="two-column">
+            <div class="content-grid">
 
-                <div>
-
-                    <p class="eyebrow">
-                        SQL SERVER
-                    </p>
-
-                    <h2>
-                        Building the analytical warehouse
-                    </h2>
-
-                    <p class="section-intro">
-                        SQL Server was used to transform the source
-                        datasets into a structured analytical warehouse.
-                    </p>
-
-                </div>
-
-                <div class="content">
+                <div class="content-column">
 
                     <p>
-                        The warehouse follows a dimensional modelling
-                        approach with three main schemas:
+                        SQL Server was used to transform the source data into a
+                        structured analytical warehouse.
                     </p>
 
-                    <div class="schema-box">
+                    <p>
+                        The warehouse follows a dimensional modelling approach
+                        using staging, dimension and fact schemas.
+                    </p>
 
-                        <div>
-                            <strong>stg</strong>
-                            <span>Staging</span>
-                        </div>
-
-                        <div>
-                            <strong>dim</strong>
-                            <span>Dimensions</span>
-                        </div>
-
-                        <div>
-                            <strong>fact</strong>
-                            <span>Facts</span>
-                        </div>
-
+                    <div class="tag-list">
+                        <span>SQL Server</span>
+                        <span>Star Schema</span>
+                        <span>Data Warehouse</span>
+                        <span>Staging</span>
+                        <span>Primary Keys</span>
+                        <span>Foreign Keys</span>
+                        <span>Data Validation</span>
+                        <span>Relational Modelling</span>
                     </div>
 
-                    <p>
-                        Dimension tables include states, seasons, players,
-                        dates, stadiums and teams.
-                    </p>
+                </div>
 
-                    <p>
-                        Fact tables include matches, player statistics and
-                        team statistics.
-                    </p>
+                <div class="architecture-card">
+
+                    <div class="schema-group">
+                        <h3>stg</h3>
+                        <p>Raw / staging data</p>
+                    </div>
+
+                    <div class="schema-group">
+                        <h3>dim</h3>
+                        <p>
+                            States · Seasons · Players · Dates · Stadiums ·
+                            Teams
+                        </p>
+                    </div>
+
+                    <div class="schema-group">
+                        <h3>fact</h3>
+                        <p>
+                            Matches · Player Stats · Team Stats
+                        </p>
+                    </div>
 
                 </div>
 
             </div>
 
+            <div class="tech-list">
 
-            <div class="technical-tags">
+                <div>
+                    <strong>Data loading</strong>
+                    <span>BULK INSERT · TRY_CAST</span>
+                </div>
 
-                <span>Relational Data Modelling</span>
-                <span>Star Schema</span>
-                <span>Primary Keys</span>
-                <span>Foreign Keys</span>
-                <span>Staging Tables</span>
-                <span>BULK INSERT</span>
-                <span>TRY_CAST()</span>
-                <span>Data Validation</span>
+                <div>
+                    <strong>Data quality</strong>
+                    <span>Duplicate handling · Validation</span>
+                </div>
+
+                <div>
+                    <strong>Relationships</strong>
+                    <span>PK/FK · Referential integrity</span>
+                </div>
 
             </div>
 
@@ -587,77 +507,69 @@
     </section>
 
 
-    <!-- =========================
-         PYTHON
-    ========================== -->
+    <!-- Python -->
+    <section class="npfl-section alternate-section">
 
-    <section class="light-section">
+        <div class="section-container">
 
-        <div class="container">
-
-            <p class="eyebrow">
-                PYTHON ANALYSIS
-            </p>
-
-            <h2>
-                Turning match data into statistical evidence
-            </h2>
+            <div class="section-heading">
+                <span>06 · PYTHON</span>
+                <h2>Turning football data into statistical evidence</h2>
+            </div>
 
             <p class="section-intro">
-                Python served as the main statistical and analytical layer,
-                covering team performance, player analysis, geographic
-                relationships, competitiveness and predictive modelling.
+                Python was used for exploratory analysis, feature engineering,
+                statistical testing, player analysis, competitiveness
+                analysis and predictive modelling.
             </p>
 
+            <div class="python-grid">
 
-            <div class="analysis-grid">
-
-                <div class="analysis-card">
-                    <h3>Team Performance</h3>
+                <div class="python-card">
+                    <h3>Data Preparation</h3>
                     <p>
-                        Matches, wins, draws, losses, goals, goal difference,
-                        points, PPG, home PPG, away PPG and league position.
+                        Loading, inspection, quality assessment, cleaning and
+                        feature engineering.
                     </p>
                 </div>
 
-                <div class="analysis-card">
+                <div class="python-card">
+                    <h3>Team Analysis</h3>
+                    <p>
+                        Wins, draws, losses, goals, points, PPG, home PPG,
+                        away PPG and league position.
+                    </p>
+                </div>
+
+                <div class="python-card">
                     <h3>Player Analysis</h3>
                     <p>
-                        Goals, appearances, minutes, goals per 90,
-                        position, contribution and expected goals where available.
+                        Goals, appearances, minutes, goals per 90, positions,
+                        goal contribution and xG where available.
                     </p>
                 </div>
 
-                <div class="analysis-card">
-                    <h3>Geographic Analysis</h3>
+                <div class="python-card">
+                    <h3>Statistical Analysis</h3>
                     <p>
-                        State population, geopolitical zones and the
-                        relationship between geography and performance.
+                        Pearson correlation, Spearman correlation,
+                        competitiveness and efficiency analysis.
                     </p>
                 </div>
 
-                <div class="analysis-card">
-                    <h3>Competitiveness</h3>
-                    <p>
-                        PPG variation, coefficient of variation and the
-                        changing gap between stronger and weaker clubs.
-                    </p>
-                </div>
-
-                <div class="analysis-card">
-                    <h3>xG Efficiency</h3>
-                    <p>
-                        Actual goals were compared with modelled expected
-                        goals to provide additional performance context.
-                    </p>
-                </div>
-
-                <div class="analysis-card">
+                <div class="python-card">
                     <h3>Predictive Modelling</h3>
                     <p>
-                        A Random Forest classification model was used to
-                        investigate relationships between match features
-                        and match outcomes.
+                        Random Forest modelling to distinguish home wins,
+                        draws and away wins.
+                    </p>
+                </div>
+
+                <div class="python-card">
+                    <h3>Visual Analysis</h3>
+                    <p>
+                        Trends, comparisons, distributions and relationships
+                        across teams, players and seasons.
                     </p>
                 </div>
 
@@ -668,249 +580,43 @@
     </section>
 
 
-    <!-- =========================
-         STATISTICAL FINDING
-    ========================== -->
+    <!-- Statistical Evidence -->
+    <section class="npfl-section">
 
-    <section class="stat-highlight">
+        <div class="section-container">
 
-        <div class="container">
+            <div class="section-heading">
+                <span>07 · STATISTICAL EVIDENCE</span>
+                <h2>Population vs club performance</h2>
+            </div>
 
-            <p class="eyebrow">
-                STATISTICAL TESTING
+            <p class="section-intro">
+                The relationship between population and club performance was
+                tested using both Pearson and Spearman correlation.
             </p>
-
-            <h2>
-                Population was not a statistically significant
-                explanation for club performance
-            </h2>
 
             <div class="correlation-grid">
 
                 <div class="correlation-card">
-
-                    <span>Pearson Correlation</span>
-
-                    <strong>
-                        r = 0.124
-                    </strong>
-
-                    <p>
-                        Population vs average club PPG
-                    </p>
-
-                    <small>
-                        p = 0.5548
-                    </small>
-
+                    <span>Pearson correlation</span>
+                    <strong>r = 0.124</strong>
+                    <small>p = 0.5548</small>
                 </div>
-
 
                 <div class="correlation-card">
+                    <span>Spearman correlation</span>
+                    <strong>ρ = 0.0546</strong>
+                    <small>p = 0.7954</small>
+                </div>
 
-                    <span>Spearman Correlation</span>
-
-                    <strong>
-                        ρ = 0.0546
-                    </strong>
-
+                <div class="correlation-result">
+                    <span>RESULT</span>
+                    <h3>No statistically significant relationship</h3>
                     <p>
-                        Population vs total points
+                        Population may provide a talent pool, supporter base
+                        or commercial opportunity, but it did not explain club
+                        performance in this sample.
                     </p>
-
-                    <small>
-                        p = 0.7954
-                    </small>
-
-                </div>
-
-            </div>
-
-            <p class="stat-explanation">
-                These results suggest that larger population alone was
-                not a reliable explanation for stronger club performance
-                in the project sample.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         POWER BI
-    ========================== -->
-
-    <section class="dashboard-section">
-
-        <div class="container">
-
-            <p class="eyebrow">
-                POWER BI REPORT
-            </p>
-
-            <h2>
-                Interactive NPFL analytical reporting
-            </h2>
-
-            <p class="section-intro">
-                The Power BI report translates the analytical work into
-                an interactive reporting environment. Each page was
-                designed around a specific analytical question rather
-                than simply displaying as many metrics as possible.
-            </p>
-
-
-            <div class="dashboard-features">
-
-                <span>Season Slicers</span>
-                <span>Ranking Visuals</span>
-                <span>Scatter Plots</span>
-                <span>Trend Charts</span>
-                <span>Matrix Heatmaps</span>
-                <span>Conditional Formatting</span>
-                <span>Comparative Charts</span>
-                <span>Donut Charts</span>
-                <span>DAX Measures</span>
-                <span>Multi-page Navigation</span>
-
-            </div>
-
-
-            <!-- OVERVIEW -->
-
-            <div class="dashboard-image">
-
-                <img
-                    src="images/project-2-npfl-data-analytics/overview.png"
-                    alt="NPFL Power BI overview dashboard"
-                >
-
-                <div class="dashboard-caption">
-                    <span>01</span>
-                    <div>
-                        <h3>Overview</h3>
-                        <p>
-                            High-level view of the NPFL dataset and key
-                            league performance indicators.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- LEAGUE -->
-
-            <div class="dashboard-image">
-
-                <img
-                    src="images/project-2-npfl-data-analytics/league.png"
-                    alt="NPFL league competitiveness dashboard"
-                >
-
-                <div class="dashboard-caption">
-                    <span>02</span>
-                    <div>
-                        <h3>League Competitiveness</h3>
-                        <p>
-                            Examining league balance, performance
-                            distribution and changes across seasons.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- CLUB PERFORMANCE -->
-
-            <div class="dashboard-image">
-
-                <img
-                    src="images/project-2-npfl-data-analytics/club-performance.png"
-                    alt="NPFL club performance dashboard"
-                >
-
-                <div class="dashboard-caption">
-                    <span>03</span>
-                    <div>
-                        <h3>Club Performance</h3>
-                        <p>
-                            Comparing club performance, rankings,
-                            consistency and sustained success.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- GEOGRAPHY -->
-
-            <div class="dashboard-image">
-
-                <img
-                    src="images/project-2-npfl-data-analytics/geography.png"
-                    alt="NPFL geography and population dashboard"
-                >
-
-                <div class="dashboard-caption">
-                    <span>04</span>
-                    <div>
-                        <h3>Geography & Population</h3>
-                        <p>
-                            Exploring geographic differences and the
-                            relationship between population and football
-                            performance.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- PLAYER -->
-
-            <div class="dashboard-image">
-
-                <img
-                    src="images/project-2-npfl-data-analytics/player.png"
-                    alt="NPFL player performance dashboard"
-                >
-
-                <div class="dashboard-caption">
-                    <span>05</span>
-                    <div>
-                        <h3>Player Performance</h3>
-                        <p>
-                            Analysing goals, appearances, scoring efficiency
-                            and player contribution by position.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- STADIUM -->
-
-            <div class="dashboard-image">
-
-                <img
-                    src="images/project-2-npfl-data-analytics/stadium.png"
-                    alt="NPFL stadium and match environment dashboard"
-                >
-
-                <div class="dashboard-caption">
-                    <span>06</span>
-                    <div>
-                        <h3>Stadium & Match Environment</h3>
-                        <p>
-                            Exploring stadium usage, capacity, goals and
-                            stadium-associated home advantage.
-                        </p>
-                    </div>
                 </div>
 
             </div>
@@ -920,153 +626,105 @@
     </section>
 
 
-    <!-- =========================
-         KEY FINDINGS
-    ========================== -->
+    <!-- Key Findings -->
+    <section class="npfl-section alternate-section">
 
-    <section>
+        <div class="section-container">
 
-        <div class="container">
-
-            <p class="eyebrow">
-                KEY FINDINGS
-            </p>
-
-            <h2>
-                What the data revealed
-            </h2>
-
+            <div class="section-heading">
+                <span>08 · KEY FINDINGS</span>
+                <h2>What the analysis revealed</h2>
+            </div>
 
             <div class="findings-grid">
 
                 <article class="finding-card">
-
-                    <span class="finding-number">01</span>
-
-                    <h3>
-                        Population Does Not Explain Club Performance
-                    </h3>
-
+                    <span>01</span>
+                    <h3>Population Does Not Explain Club Performance</h3>
                     <p>
-                        The analysis did not find statistically significant
-                        evidence that clubs from more populated states
-                        consistently achieve higher performance.
+                        The relationship between population and club
+                        performance was weak and statistically insignificant.
+                        Other sporting and structural factors appear more
+                        important.
                     </p>
-
-                    <p>
-                        Population may provide a larger potential talent and
-                        supporter base, but the analysis suggests that
-                        population by itself does not determine sporting success.
-                    </p>
-
                 </article>
 
-
                 <article class="finding-card">
-
-                    <span class="finding-number">02</span>
-
+                    <span>02</span>
                     <h3>
-                        Geography Matters, But There Is No Simple North-South Divide
+                        Geography Matters, But There Is No Simple
+                        North-South Divide
                     </h3>
 
-                    <p>
-                        Club performance varied across Nigeria's geopolitical
-                        zones, with the strongest average club PPG observed
-                        in the southern zones.
-                    </p>
-
-                    <div class="mini-stats">
-
+                    <div class="regional-list">
                         <div>
-                            <strong>1.45</strong>
                             <span>South South</span>
+                            <strong>1.45 PPG</strong>
                         </div>
 
                         <div>
-                            <strong>1.42</strong>
                             <span>South West</span>
+                            <strong>1.42 PPG</strong>
                         </div>
 
                         <div>
-                            <strong>1.42</strong>
                             <span>South East</span>
+                            <strong>1.42 PPG</strong>
                         </div>
 
                         <div>
-                            <strong>1.15</strong>
-                            <span>North East</span>
+                            <span>North Central</span>
+                            <strong>1.36 PPG</strong>
                         </div>
 
+                        <div>
+                            <span>North West</span>
+                            <strong>1.36 PPG</strong>
+                        </div>
+
+                        <div>
+                            <span>North East</span>
+                            <strong>1.15 PPG</strong>
+                        </div>
                     </div>
 
                 </article>
-
-
-                <article class="finding-card featured-finding">
-
-                    <span class="finding-number">03</span>
-
-                    <h3>
-                        NPFL Competitiveness Improved
-                    </h3>
-
-                    <p>
-                        Outside the abridged 2022/23 season, later seasons
-                        showed a more compressed competitive distribution.
-                    </p>
-
-                    <div class="big-finding">
-                        <strong>39%</strong>
-                        <span>
-                            approximate reduction in PPG spread
-                            from 2020/21 to 2025/26
-                        </span>
-                    </div>
-
-                </article>
-
 
                 <article class="finding-card">
-
-                    <span class="finding-number">04</span>
-
-                    <h3>
-                        Sustained Success Is Concentrated
-                    </h3>
-
+                    <span>03</span>
+                    <h3>NPFL Competitiveness Improved</h3>
                     <p>
-                        Several clubs repeatedly appeared among the strongest
-                        performers across the six-season period.
+                        PPG spread fell from <strong>1.21</strong> in 2020/21
+                        to <strong>0.74</strong> in 2025/26 — approximately a
+                        39% reduction.
                     </p>
-
-                    <p class="club-list">
-                        Rivers United · Enyimba · Enugu Rangers ·
-                        Plateau United · Remo Stars · Kano Pillars ·
-                        Abia Warriors
-                    </p>
-
-                    <p>
-                        Rivers United recorded the highest overall points
-                        total in the project's six-season club analysis.
-                    </p>
-
                 </article>
 
+                <article class="finding-card">
+                    <span>04</span>
+                    <h3>Sustained Success Is Concentrated</h3>
+                    <p>
+                        Rivers United, Enyimba, Enugu Rangers, Plateau United,
+                        Remo Stars, Kano Pillars and Abia Warriors repeatedly
+                        appeared among the stronger-performing clubs.
+                    </p>
+                </article>
 
                 <article class="finding-card featured-finding">
 
-                    <span class="finding-number">05</span>
+                    <span>05</span>
 
-                    <h3>
-                        Home Advantage Is a Major NPFL Characteristic
-                    </h3>
+                    <h3>Home Advantage Is Major</h3>
 
-                    <div class="home-advantage">
+                    <div class="big-comparison">
 
                         <div>
                             <strong>2.18</strong>
                             <span>Home PPG</span>
+                        </div>
+
+                        <div class="comparison-divider">
+                            vs
                         </div>
 
                         <div>
@@ -1077,128 +735,53 @@
                     </div>
 
                     <p>
-                        Home teams averaged almost four times as many points
-                        per game as away teams.
+                        Home teams won 63.68% of matches, compared with 11.84%
+                        away wins.
                     </p>
-
-                    <div class="result-split">
-                        <span>Home Win <strong>63.68%</strong></span>
-                        <span>Draw <strong>24.47%</strong></span>
-                        <span>Away Win <strong>11.84%</strong></span>
-                    </div>
 
                 </article>
 
-
                 <article class="finding-card">
-
-                    <span class="finding-number">06</span>
-
-                    <h3>
-                        Player Goal Contribution Is Concentrated Among Forwards
-                    </h3>
-
+                    <span>06</span>
+                    <h3>Player Contribution Is Concentrated</h3>
                     <p>
-                        In the 2025/26 player analysis, forwards accounted
-                        for almost two-thirds of recorded goal contribution.
+                        In 2025/26, forwards accounted for 63.72% of recorded
+                        goal contribution, followed by midfielders at 21.48%
+                        and defenders at 14.80%.
                     </p>
-
-                    <div class="position-bars">
-
-                        <div>
-                            <span>Forward</span>
-                            <strong>63.72%</strong>
-                        </div>
-
-                        <div>
-                            <span>Midfielder</span>
-                            <strong>21.48%</strong>
-                        </div>
-
-                        <div>
-                            <span>Defender</span>
-                            <strong>14.80%</strong>
-                        </div>
-
-                    </div>
-
                 </article>
 
-
                 <article class="finding-card">
-
-                    <span class="finding-number">07</span>
-
-                    <h3>
-                        xG Efficiency Provides Useful Context
-                    </h3>
-
+                    <span>07</span>
+                    <h3>xG Efficiency Varies</h3>
                     <p>
-                        Some clubs recorded substantially more goals than
-                        their modelled expected goals, while others recorded
-                        less.
-                    </p>
-
-                    <p>
-                        The highest actual-goals-to-xG ratios included
                         El-Kanemi Warriors, Kano Pillars, Katsina United,
-                        Enugu Rangers and Kun Khalifat.
+                        Enugu Rangers and Kun Khalifat recorded some of the
+                        highest actual-goals-to-xG ratios.
                     </p>
-
-                    <p class="small-note">
-                        Actual goals versus xG is treated as an efficiency
-                        indicator rather than definitive proof of finishing skill.
-                    </p>
-
                 </article>
-
 
                 <article class="finding-card">
-
-                    <span class="finding-number">08</span>
-
-                    <h3>
-                        Stadiums Are Part of the League Product
-                    </h3>
-
+                    <span>08</span>
+                    <h3>Stadiums Matter to the Matchday Product</h3>
                     <p>
-                        Stadium analysis examined match usage, capacity,
-                        average goals and home/away performance.
+                        Enyimba International Stadium, Godswill Akpabio
+                        International Stadium, Pantami Stadium, New Jos
+                        Stadium and Nnamdi Azikiwe Stadium were among the most
+                        frequently used venues.
                     </p>
-
-                    <p>
-                        Among the most-used venues were Enyimba International
-                        Stadium, Godswill Akpabio International Stadium,
-                        Pantami Stadium, New Jos Stadium and Nnamdi Azikiwe Stadium.
-                    </p>
-
                 </article>
 
-
-                <article class="finding-card model-card">
-
-                    <span class="finding-number">09</span>
-
+                <article class="finding-card">
+                    <span>09</span>
                     <h3>
-                        Predictive Modelling Shows Strong Home-Win Recognition
+                        Predictive Modelling Shows Promise — With Caveats
                     </h3>
-
-                    <div class="model-score">
-                        <strong>64.9%</strong>
-                        <span>approximate overall accuracy</span>
-                    </div>
-
                     <p>
-                        The Random Forest model demonstrated useful predictive
-                        information in historical team-performance variables.
+                        The Random Forest model achieved approximately 64.9%
+                        accuracy, with stronger recognition of home wins than
+                        draws or away wins due partly to class imbalance.
                     </p>
-
-                    <p>
-                        However, substantial class imbalance meant that the
-                        model strongly favoured home wins and performed poorly
-                        when identifying draws and away wins.
-                    </p>
-
                 </article>
 
             </div>
@@ -1208,137 +791,113 @@
     </section>
 
 
-    <!-- =========================
-         STRATEGIC IMPLICATIONS
-    ========================== -->
+    <!-- Power BI -->
+    <section class="npfl-section powerbi-section">
 
-    <section class="dark-section">
+        <div class="section-container">
 
-        <div class="container">
-
-            <p class="eyebrow light-eyebrow">
-                STRATEGIC IMPLICATIONS
-            </p>
-
-            <h2 class="white-heading">
-                What could these findings mean for the NPFL?
-            </h2>
-
-
-            <div class="strategy-grid">
-
-                <div class="strategy-card">
-
-                    <span>01</span>
-
-                    <h3>
-                        Develop Sporting Systems
-                    </h3>
-
-                    <p>
-                        Population alone does not appear to determine club
-                        performance. Investment should therefore focus on
-                        systems capable of converting Nigeria's large football
-                        talent pool into sustained sporting performance.
-                    </p>
-
-                    <div class="strategy-tags">
-                        <span>Academies</span>
-                        <span>Coaching</span>
-                        <span>Recruitment</span>
-                        <span>Performance Analysis</span>
-                    </div>
-
-                </div>
-
-
-                <div class="strategy-card">
-
-                    <span>02</span>
-
-                    <h3>
-                        Strengthen Infrastructure
-                    </h3>
-
-                    <p>
-                        Improving pitch quality, stadium facilities,
-                        supporter experience, accessibility and broadcast
-                        infrastructure could strengthen both sporting and
-                        commercial outcomes.
-                    </p>
-
-                </div>
-
-
-                <div class="strategy-card">
-
-                    <span>03</span>
-
-                    <h3>
-                        Expand Football Data Infrastructure
-                    </h3>
-
-                    <p>
-                        A stronger NPFL data ecosystem could support
-                        performance analysis, recruitment, scouting,
-                        broadcast storytelling, fan engagement and
-                        commercial analytics.
-                    </p>
-
-                </div>
-
-
-                <div class="strategy-card">
-
-                    <span>04</span>
-
-                    <h3>
-                        Improve Broadcast & Digital Reach
-                    </h3>
-
-                    <p>
-                        Better broadcast coverage, digital content and
-                        consistent data collection can increase the league's
-                        visibility among supporters, sponsors, broadcasters,
-                        scouts and clubs.
-                    </p>
-
-                </div>
-
-
-                <div class="strategy-card">
-
-                    <span>05</span>
-
-                    <h3>
-                        Build Commercial Value Around the Sporting Product
-                    </h3>
-
-                    <p>
-                        A stronger domestic football ecosystem can connect
-                        sporting performance with fan engagement, digital
-                        reach, commercial partnerships and long-term
-                        investment.
-                    </p>
-
-                </div>
-
+            <div class="section-heading">
+                <span>09 · POWER BI</span>
+                <h2>Interactive football intelligence</h2>
             </div>
 
+            <p class="section-intro">
+                Power BI brought the SQL and Python analysis together into an
+                interactive reporting experience designed around specific
+                analytical questions.
+            </p>
 
-            <div class="ecosystem">
+            <div class="dashboard-features">
+                <span>Season slicers</span>
+                <span>Ranking visuals</span>
+                <span>Scatter plots</span>
+                <span>Trend charts</span>
+                <span>Matrix heatmaps</span>
+                <span>Conditional formatting</span>
+                <span>Comparative bars</span>
+                <span>DAX measures</span>
+                <span>Page navigation</span>
+            </div>
 
-                <div>Sporting Performance</div>
-                <span>↓</span>
-                <div>Fan Engagement</div>
-                <span>↓</span>
-                <div>Broadcast & Digital Reach</div>
-                <span>↓</span>
-                <div>Commercial Partnerships</div>
-                <span>↓</span>
-                <div>Club & League Investment</div>
-                <span>↓</span>
-                <div>Improved Sporting Ecosystem</div>
+            <div class="dashboard-gallery">
+
+                <figure class="dashboard-image">
+                    <img
+                        src="images/project-2-npfl-data-analysis/overview.png"
+                        alt="NPFL Power BI overview dashboard"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        <strong>Overview</strong>
+                        <span>High-level NPFL performance summary</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="dashboard-image">
+                    <img
+                        src="images/project-2-npfl-data-analysis/geography.png"
+                        alt="NPFL Power BI geography dashboard"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        <strong>Geography</strong>
+                        <span>Regional and population analysis</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="dashboard-image">
+                    <img
+                        src="images/project-2-npfl-data-analysis/league.png"
+                        alt="NPFL Power BI league competitiveness dashboard"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        <strong>League</strong>
+                        <span>Competitiveness and league trends</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="dashboard-image">
+                    <img
+                        src="images/project-2-npfl-data-analysis/club-performance.png"
+                        alt="NPFL Power BI club performance dashboard"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        <strong>Club Performance</strong>
+                        <span>Club rankings and sustained performance</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="dashboard-image">
+                    <img
+                        src="images/project-2-npfl-data-analysis/player.png"
+                        alt="NPFL Power BI player analysis dashboard"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        <strong>Player</strong>
+                        <span>Player contribution and scoring analysis</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="dashboard-image">
+                    <img
+                        src="images/project-2-npfl-data-analysis/stadium.png"
+                        alt="NPFL Power BI stadium analysis dashboard"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        <strong>Stadium</strong>
+                        <span>Stadium usage and matchday analysis</span>
+                    </figcaption>
+                </figure>
 
             </div>
 
@@ -1347,89 +906,155 @@
     </section>
 
 
-    <!-- =========================
-         LIMITATIONS
-    ========================== -->
+    <!-- DAX -->
+    <section class="npfl-section alternate-section">
 
-    <section class="light-section">
+        <div class="section-container">
 
-        <div class="container">
+            <div class="section-heading">
+                <span>10 · DAX</span>
+                <h2>Season-aware performance metrics</h2>
+            </div>
 
-            <p class="eyebrow">
-                DATA QUALITY & LIMITATIONS
+            <p class="section-intro">
+                DAX was used to create reusable measures and calculations that
+                allowed the Power BI report to respond dynamically to season,
+                team and player selections.
             </p>
 
-            <h2>
-                Reading the analysis with context
-            </h2>
+            <div class="code-grid">
+
+                <div class="code-card">
+                    <h3>Calculated Points</h3>
+
+                    <pre><code>Calculated Points =
+'Team Stats'[wins] * 3 +
+'Team Stats'[draws]</code></pre>
+                </div>
+
+                <div class="code-card">
+                    <h3>Goals per 90</h3>
+
+                    <pre><code>Goals per 90 =
+DIVIDE(
+    SUM('Player Stats'[goals_overall]) * 90,
+    SUM('Player Stats'[minutes_played_overall])
+)</code></pre>
+                </div>
+
+                <div class="code-card">
+                    <h3>Home Advantage PPG</h3>
+
+                    <pre><code>Home Advantage PPG =
+[Home PPG] - [Away PPG]</code></pre>
+                </div>
+
+                <div class="code-card">
+                    <h3>Match Count</h3>
+
+                    <pre><code>Match Count =
+COUNTROWS('Matches')</code></pre>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Technical Skills -->
+    <section class="npfl-section">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+                <span>11 · TECHNICAL SKILLS</span>
+                <h2>The toolkit behind the analysis</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-group">
+                    <h3>SQL</h3>
+
+                    <ul>
+                        <li>SQL Server</li>
+                        <li>Data Warehousing</li>
+                        <li>Dimensional Modelling</li>
+                        <li>Star Schema</li>
+                        <li>Staging</li>
+                        <li>BULK INSERT</li>
+                        <li>TRY_CAST</li>
+                        <li>Primary & Foreign Keys</li>
+                        <li>Data Validation</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Python</h3>
+
+                    <ul>
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                        <li>Exploratory Data Analysis</li>
+                        <li>Feature Engineering</li>
+                        <li>Statistical Testing</li>
+                        <li>Pearson & Spearman Correlation</li>
+                        <li>xG Analysis</li>
+                        <li>Random Forest</li>
+                        <li>Model Evaluation</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Power BI</h3>
+
+                    <ul>
+                        <li>Data Modelling</li>
+                        <li>Star Schema</li>
+                        <li>DAX</li>
+                        <li>Filter Context</li>
+                        <li>Calculated Measures</li>
+                        <li>Ranking</li>
+                        <li>Conditional Formatting</li>
+                        <li>Scatter Plots</li>
+                        <li>Matrix Heatmaps</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Limitations -->
+    <section class="npfl-section alternate-section">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+                <span>12 · LIMITATIONS</span>
+                <h2>What the analysis cannot tell us</h2>
+            </div>
 
             <div class="limitations-grid">
 
-                <div class="limitation">
-                    <h3>Abridged 2022/23 Season</h3>
-                    <p>
-                        The 2022/23 season contains fewer matches, making
-                        direct comparison of some season-level totals
-                        inappropriate without considering season structure.
-                    </p>
+                <div>2022/23 was an abridged season.</div>
+                <div>Some player records contained duplicates.</div>
+                <div>Some stadium information was missing or unknown.</div>
+                <div>Geographic mapping quality varied across records.</div>
+                <div>
+                    Advanced player statistics were incomplete in some cases.
                 </div>
-
-                <div class="limitation">
-                    <h3>Duplicate Player Records</h3>
-                    <p>
-                        Duplicate player records were identified during
-                        preparation and handled where appropriate.
-                    </p>
+                <div>xG analysis depends on the underlying xG model.</div>
+                <div>
+                    Predictive modelling was affected by class imbalance.
                 </div>
-
-                <div class="limitation">
-                    <h3>Missing Stadium Information</h3>
-                    <p>
-                        Some match records contain missing or unknown
-                        stadium information.
-                    </p>
-                </div>
-
-                <div class="limitation">
-                    <h3>Geographic Mapping</h3>
-                    <p>
-                        Geographic analysis depends on the quality and
-                        consistency of state and club mapping.
-                    </p>
-                </div>
-
-                <div class="limitation">
-                    <h3>Advanced Player Statistics</h3>
-                    <p>
-                        Some advanced player statistics are incomplete
-                        across the full analysis period.
-                    </p>
-                </div>
-
-                <div class="limitation">
-                    <h3>xG Model Limitations</h3>
-                    <p>
-                        Expected-goals metrics depend on the underlying
-                        model and should be interpreted as modelled estimates.
-                    </p>
-                </div>
-
-                <div class="limitation">
-                    <h3>Predictive Model Class Imbalance</h3>
-                    <p>
-                        Overall accuracy alone is not an adequate measure
-                        of model quality because the outcome classes were
-                        substantially imbalanced.
-                    </p>
-                </div>
-
-                <div class="limitation">
-                    <h3>Causality</h3>
-                    <p>
-                        The project is primarily observational. Identified
-                        relationships should not automatically be interpreted
-                        as causal relationships.
-                    </p>
+                <div>
+                    Observational analysis does not establish causality.
                 </div>
 
             </div>
@@ -1439,84 +1064,65 @@
     </section>
 
 
-    <!-- =========================
-         TECHNICAL SKILLS
-    ========================== -->
+    <!-- Strategic Implications -->
+    <section class="npfl-section">
 
-    <section>
+        <div class="section-container">
 
-        <div class="container">
+            <div class="section-heading">
+                <span>13 · STRATEGIC IMPLICATIONS</span>
+                <h2>Where the opportunity lies</h2>
+            </div>
 
-            <p class="eyebrow">
-                TECHNICAL SKILLS
-            </p>
+            <div class="strategy-grid">
 
-            <h2>
-                Tools & techniques demonstrated
-            </h2>
+                <article class="strategy-card">
+                    <span>01</span>
+                    <h3>Develop Sporting Systems</h3>
+                    <p>
+                        Strengthen academies, coaching, recruitment,
+                        performance analysis, management and player
+                        development.
+                    </p>
+                </article>
 
+                <article class="strategy-card">
+                    <span>02</span>
+                    <h3>Strengthen Infrastructure</h3>
+                    <p>
+                        Improve pitches, facilities, supporter experience,
+                        accessibility and broadcast infrastructure.
+                    </p>
+                </article>
 
-            <div class="skills-columns">
+                <article class="strategy-card">
+                    <span>03</span>
+                    <h3>Expand Football Data Infrastructure</h3>
+                    <p>
+                        Build stronger data systems for performance,
+                        recruitment, scouting, broadcast, fan engagement and
+                        commercial decisions.
+                    </p>
+                </article>
 
-                <div class="skills-column">
+                <article class="strategy-card">
+                    <span>04</span>
+                    <h3>Improve Broadcast & Digital Reach</h3>
+                    <p>
+                        Expand the league's reach to supporters, sponsors,
+                        broadcasters, scouts and international audiences.
+                    </p>
+                </article>
 
-                    <h3>SQL</h3>
-
-                    <div class="skill-tags">
-                        <span>SQL Server</span>
-                        <span>Data Warehousing</span>
-                        <span>Dimensional Modelling</span>
-                        <span>Star Schema</span>
-                        <span>Staging Tables</span>
-                        <span>BULK INSERT</span>
-                        <span>TRY_CAST</span>
-                        <span>Data Validation</span>
-                        <span>Relational Modelling</span>
-                    </div>
-
-                </div>
-
-
-                <div class="skills-column">
-
-                    <h3>Python</h3>
-
-                    <div class="skill-tags">
-                        <span>Pandas</span>
-                        <span>NumPy</span>
-                        <span>EDA</span>
-                        <span>Data Cleaning</span>
-                        <span>Feature Engineering</span>
-                        <span>Statistical Analysis</span>
-                        <span>Pearson Correlation</span>
-                        <span>Spearman Correlation</span>
-                        <span>xG Analysis</span>
-                        <span>Random Forest</span>
-                        <span>Model Evaluation</span>
-                    </div>
-
-                </div>
-
-
-                <div class="skills-column">
-
-                    <h3>Power BI</h3>
-
-                    <div class="skill-tags">
-                        <span>Data Modelling</span>
-                        <span>DAX</span>
-                        <span>Filter Context</span>
-                        <span>Measures</span>
-                        <span>Ranking Logic</span>
-                        <span>Season-aware Calculations</span>
-                        <span>Conditional Formatting</span>
-                        <span>Scatter Plots</span>
-                        <span>Matrix Heatmaps</span>
-                        <span>Tooltips</span>
-                        <span>Interactive Filtering</span>
-                    </div>
-
-                </div>
+                <article class="strategy-card">
+                    <span>05</span>
+                    <h3>Build Commercial Value</h3>
+                    <p>
+                        Convert sporting performance into fan engagement,
+                        broadcast and digital value, commercial partnerships
+                        and reinvestment.
+                    </p>
+                </article>
 
             </div>
 
@@ -1525,57 +1131,43 @@
     </section>
 
 
-    <!-- =========================
-         CONCLUSION
-    ========================== -->
+    <!-- Conclusion -->
+    <section class="npfl-section conclusion-section">
 
-    <section class="conclusion-section">
+        <div class="section-container">
 
-        <div class="container">
+            <div class="conclusion-card">
 
-            <p class="eyebrow">
-                OVERALL CONCLUSION
-            </p>
+                <span>14 · CONCLUSION</span>
 
-            <h2>
-                Population isn't the limiting factor.
-            </h2>
-
-            <p class="conclusion-lead">
-                The analysis produces a more nuanced picture of the NPFL
-                than a simple population-versus-performance comparison.
-            </p>
-
-            <p>
-                Nigeria has a large population, deep football culture and
-                a strong history of football achievement. However, the
-                analysis does not show population size alone translating
-                directly into club performance.
-            </p>
-
-            <p>
-                Instead, the strongest patterns are found in sustained
-                club performance, home advantage, competitive balance,
-                player contribution, geographic differences, stadium
-                environments, data availability and sporting systems.
-            </p>
-
-            <p>
-                The reduction in PPG variation across the six-season period
-                suggests that the league became more competitively balanced
-                toward 2025/26, while repeated high performance among certain
-                clubs shows that sustained success remains achievable for
-                clubs capable of maintaining strong systems.
-            </p>
-
-            <div class="conclusion-box">
+                <h2>
+                    Population is only part of the story.
+                </h2>
 
                 <p>
-                    Nigeria has the football talent and culture; the data
-                    suggests population isn't the limiting factor — the bigger
-                    opportunity is building the sporting, infrastructure,
-                    data, broadcast and commercial systems that convert that
-                    potential into sustained domestic value.
+                    The NPFL analysis produced a more nuanced picture than a
+                    simple population-performance relationship.
+                </p>
+
+                <p>
+                    The strongest patterns appeared around sustained club
+                    performance, home advantage, competitive balance, player
+                    contribution, geographic differences, stadium environments
+                    and the availability of football data.
+                </p>
+
+                <p>
+                    The reduction in PPG variation suggests a more balanced
+                    league by 2025/26, while repeated high performance among
+                    certain clubs highlights the importance of sustainable
+                    sporting systems.
+                </p>
+
+                <p class="conclusion-final">
+                    Nigeria already has the football talent and culture.
+                    The bigger opportunity is building the sporting,
+                    infrastructure, data, broadcast and commercial systems
+                    that can consistently convert that potential into value.
                 </p>
 
             </div>
@@ -1585,92 +1177,142 @@
     </section>
 
 
-    <!-- =========================
-         DATA SOURCE
-    ========================== -->
+    <!-- Data Source -->
+    <section class="npfl-section source-section">
 
-    <section class="source-section">
+        <div class="section-container">
 
-        <div class="container">
+            <div class="section-heading">
+                <span>15 · DATA SOURCE</span>
+                <h2>Data, licensing & disclaimer</h2>
+            </div>
 
-            <p class="eyebrow">
-                DATA SOURCE & LICENSING
-            </p>
+            <div class="source-grid">
 
-            <h2>
-                About the underlying data
-            </h2>
+                <div>
+                    <h3>Data Source</h3>
+                    <p>
+                        The project uses data obtained through a licensed
+                        FootyStats subscription.
+                    </p>
+                </div>
 
-            <p>
-                The football datasets used in this project were obtained
-                through a paid FootyStats subscription.
-            </p>
+                <div>
+                    <h3>Public Repository</h3>
+                    <p>
+                        Underlying source datasets are excluded from the public
+                        repository. Raw or cleaned copies reproducing the
+                        licensed source data are not included.
+                    </p>
+                </div>
 
-            <p>
-                The underlying source datasets are not included in the
-                public repository. Original CSV files, cleaned versions
-                that substantially reproduce the licensed source data,
-                database backups and full database dumps are intentionally
-                excluded.
-            </p>
+                <div>
+                    <h3>What the Repository Demonstrates</h3>
+                    <p>
+                        The repository focuses on methodology, data
+                        engineering, analysis, statistical modelling, DAX,
+                        visualisation, storytelling and findings.
+                    </p>
+                </div>
 
-            <p>
-                The project instead focuses on demonstrating analytical
-                methodology, SQL engineering, statistical analysis, data
-                modelling, Power BI development, DAX calculations,
-                visualisation, analytical storytelling, findings and
-                recommendations.
-            </p>
+            </div>
 
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         DISCLAIMER
-    ========================== -->
-
-    <section class="disclaimer-section">
-
-        <div class="container">
-
-            <h2>
-                Disclaimer
-            </h2>
-
-            <p>
-                This project is an independent data-analysis portfolio
-                project. The analysis is intended for educational,
-                analytical and portfolio purposes and does not represent
-                an official publication by the Nigerian Premier Football
-                League, any NPFL club, FootyStats or any other data provider.
-            </p>
-
-            <p>
-                Statistical relationships and model outputs should be
-                interpreted within the limitations described in this project.
-            </p>
+            <div class="disclaimer">
+                <strong>Disclaimer:</strong>
+                This is an independent portfolio project and is not an
+                official publication of the NPFL, any NPFL club or FootyStats.
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
+    <!-- Author -->
+    <section class="npfl-section author-section">
 
-    <footer>
+        <div class="section-container">
 
-        <div class="container">
+            <div class="author-card">
 
-            <p>
-                © 2026 Jonah Peter. All rights reserved.
-            </p>
+                <div>
+
+                    <span>PROJECT BY</span>
+
+                    <h2>Jonah Peter</h2>
+
+                    <p>
+                        Junior Data Analyst · Data Analytics · SQL · Python ·
+                        Power BI
+                    </p>
+
+                </div>
+
+                <div class="author-tools">
+                    <span>SQL Server</span>
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                    <span>Power BI</span>
+                    <span>DAX</span>
+                    <span>Scikit-learn</span>
+                    <span>Matplotlib</span>
+                </div>
+
+            </div>
 
         </div>
 
+    </section>
+
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+
+        <div class="section-container">
+
+            <h2>
+                Interested in the story behind the analysis?
+            </h2>
+
+            <p>
+                Read the full behind-the-scenes article or explore the
+                project repository.
+            </p>
+
+            <div class="project-buttons">
+
+                <a
+                    href="https://medium.com/@Lagoju/behind-the-scenes-npfl-data-analytics-54745466a57e"
+                    class="project-btn primary-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Read the Medium Article →
+                </a>
+
+                <a
+                    href="https://github.com/Lagoju/npfl-data-analytics"
+                    class="project-btn secondary-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View on GitHub →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="project-footer">
+        <p>
+            © 2026 Jonah Peter. Built with data, curiosity and probably too
+            much coffee.
+        </p>
     </footer>
 
 </body>
