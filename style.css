@@ -131,6 +131,23 @@ nav {
     transform: translateY(-2px);
 }
 
+/* Writing button */
+.writing-button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.writing-button:hover {
+    background-color: #1d4ed8;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
 
 /* =========================
    SECTIONS
