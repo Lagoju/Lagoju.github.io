@@ -40,7 +40,7 @@ nav {
     top: 0;
     z-index: 1000;
     background-color: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid #dcefe5;
 }
 
 .nav-container {
@@ -81,32 +81,51 @@ nav {
 ========================= */
 
 .project-hero {
-    padding: 100px 0;
-    background-color: #f4fbf7;
-    border-bottom: 1px solid #dcefe5;
+    padding: 105px 0 95px;
+    background-color: #f3faf6;
+    border-bottom: 1px solid #d7eee1;
+}
+
+.project-hero .container {
+    position: relative;
 }
 
 .project-label {
+    display: inline-block;
     color: #008c4a;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     font-weight: bold;
-    letter-spacing: 1.5px;
-    margin-bottom: 18px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.project-label::before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 3px;
+    background-color: #008c4a;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 2px;
 }
 
 .project-hero h1 {
-    max-width: 850px;
-    font-size: 3.3rem;
-    line-height: 1.15;
+    max-width: 900px;
+    font-size: 3.4rem;
+    line-height: 1.12;
     color: #111827;
     margin-bottom: 25px;
+    letter-spacing: -1px;
 }
 
 .project-intro {
     max-width: 800px;
-    font-size: 1.1rem;
+    font-size: 1.12rem;
+    line-height: 1.75;
     color: #4b5563;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 
@@ -123,8 +142,8 @@ nav {
 
 .btn {
     display: inline-block;
-    padding: 12px 20px;
-    border-radius: 6px;
+    padding: 12px 21px;
+    border-radius: 7px;
     font-weight: bold;
     transition: all 0.3s ease;
 }
@@ -132,11 +151,14 @@ nav {
 .btn-primary {
     background-color: #008c4a;
     color: #ffffff;
+    border: 1px solid #008c4a;
 }
 
 .btn-primary:hover {
     background-color: #006f3b;
+    border-color: #006f3b;
     transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(0, 140, 74, 0.16);
 }
 
 .btn-secondary {
@@ -159,6 +181,7 @@ nav {
 .btn-back:hover {
     color: #008c4a;
     border-color: #008c4a;
+    transform: translateY(-2px);
 }
 
 
@@ -167,19 +190,34 @@ nav {
 ========================= */
 
 section {
-    padding: 80px 0;
+    padding: 85px 0;
 }
 
 section h2 {
+    position: relative;
     font-size: 2rem;
+    line-height: 1.25;
     color: #111827;
     margin-bottom: 18px;
+    padding-left: 16px;
+}
+
+section h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 5px;
+    height: calc(100% - 6px);
+    background-color: #008c4a;
+    border-radius: 3px;
 }
 
 .section-intro {
     max-width: 750px;
     color: #6b7280;
-    margin-bottom: 35px;
+    margin-bottom: 38px;
+    font-size: 1rem;
 }
 
 .content {
@@ -189,6 +227,7 @@ section h2 {
 .content p {
     color: #4b5563;
     margin-bottom: 18px;
+    line-height: 1.75;
 }
 
 .content ul {
@@ -197,11 +236,11 @@ section h2 {
 }
 
 .content li {
-    margin-bottom: 6px;
+    margin-bottom: 7px;
 }
 
 .light-section {
-    background-color: #f8faf9;
+    background-color: #f8fbf9;
 }
 
 
@@ -212,31 +251,46 @@ section h2 {
 .questions-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 22px;
+    margin-top: 35px;
 }
 
 .question-card {
+    position: relative;
     background-color: #ffffff;
-    padding: 28px;
-    border: 1px solid #e1e7e3;
+    padding: 30px;
+    border: 1px solid #dce9e2;
     border-radius: 10px;
     transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.question-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #008c4a;
 }
 
 .question-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
     border-color: #008c4a;
-    box-shadow: 0 8px 20px rgba(0, 140, 74, 0.08);
+    box-shadow: 0 12px 28px rgba(0, 140, 74, 0.09);
 }
 
 .question-card h3 {
     color: #008c4a;
-    font-size: 1.2rem;
+    font-size: 1.18rem;
+    line-height: 1.4;
     margin-bottom: 12px;
 }
 
 .question-card p {
     color: #4b5563;
+    line-height: 1.7;
 }
 
 
@@ -250,10 +304,16 @@ section h2 {
     gap: 70px;
 }
 
+.two-column h3 {
+    color: #111827;
+    margin-bottom: 15px;
+}
+
 .two-column p {
     max-width: 520px;
     color: #4b5563;
     margin-bottom: 18px;
+    line-height: 1.75;
 }
 
 .tools-list {
@@ -261,8 +321,18 @@ section h2 {
 }
 
 .tools-list li {
-    margin-bottom: 13px;
+    margin-bottom: 14px;
     color: #4b5563;
+    padding-left: 22px;
+    position: relative;
+}
+
+.tools-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #008c4a;
+    font-weight: bold;
 }
 
 .tools-list strong {
@@ -275,27 +345,34 @@ section h2 {
 ========================= */
 
 .workflow {
-    max-width: 700px;
-    margin-top: 35px;
+    max-width: 720px;
+    margin-top: 38px;
 }
 
 .workflow-step {
     display: flex;
     align-items: center;
     gap: 18px;
-    padding: 18px 22px;
+    padding: 19px 22px;
     background-color: #ffffff;
-    border: 1px solid #dfe8e3;
-    border-radius: 8px;
+    border: 1px solid #dce9e2;
+    border-radius: 9px;
+    transition: all 0.3s ease;
+}
+
+.workflow-step:hover {
+    border-color: #008c4a;
+    transform: translateX(4px);
+    box-shadow: 0 6px 18px rgba(0, 140, 74, 0.07);
 }
 
 .workflow-step span {
-    min-width: 38px;
-    height: 38px;
+    min-width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e8f6ef;
+    background-color: #e6f5ed;
     color: #008c4a;
     border-radius: 50%;
     font-weight: bold;
@@ -310,8 +387,8 @@ section h2 {
 .workflow-arrow {
     text-align: center;
     color: #008c4a;
-    font-size: 1.4rem;
-    padding: 5px 0;
+    font-size: 1.3rem;
+    padding: 6px 0;
 }
 
 
@@ -323,26 +400,47 @@ section h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 22px;
+    margin-top: 35px;
 }
 
 .finding-card {
     position: relative;
     background-color: #ffffff;
     padding: 32px;
-    border: 1px solid #e1e7e3;
+    border: 1px solid #dce9e2;
     border-radius: 10px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.finding-card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #008c4a;
+}
+
+.finding-card:hover {
+    transform: translateY(-4px);
+    border-color: #008c4a;
+    box-shadow: 0 10px 25px rgba(0, 140, 74, 0.08);
 }
 
 .finding-number {
     display: inline-block;
     color: #008c4a;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     font-weight: bold;
+    letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
 .finding-card h3 {
-    font-size: 1.3rem;
+    font-size: 1.28rem;
+    line-height: 1.4;
     color: #111827;
     margin-bottom: 14px;
 }
@@ -350,6 +448,7 @@ section h2 {
 .finding-card p {
     color: #4b5563;
     margin-bottom: 12px;
+    line-height: 1.7;
 }
 
 
@@ -358,11 +457,11 @@ section h2 {
 ========================= */
 
 .dashboard-section {
-    background-color: #f8faf9;
+    background-color: #f8fbf9;
 }
 
 .dashboard-image {
-    margin-top: 40px;
+    margin-top: 42px;
     text-align: center;
 }
 
@@ -372,15 +471,21 @@ section h2 {
     max-width: 1000px;
     height: auto;
     margin: 0 auto;
-    border: 1px solid #dce5df;
-    border-radius: 10px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    border: 1px solid #d6e6dd;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-image img:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.09);
 }
 
 .image-caption {
-    margin-top: 12px;
+    margin-top: 13px;
     color: #6b7280;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     font-weight: bold;
 }
 
@@ -391,15 +496,15 @@ section h2 {
 
 .recommendations {
     max-width: 850px;
-    margin-top: 30px;
+    margin-top: 32px;
 }
 
 .recommendation {
     display: flex;
     gap: 20px;
     align-items: flex-start;
-    padding: 22px 0;
-    border-bottom: 1px solid #dfe7e2;
+    padding: 23px 0;
+    border-bottom: 1px solid #dfe8e3;
 }
 
 .recommendation:last-child {
@@ -412,7 +517,7 @@ section h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e8f6ef;
+    background-color: #e6f5ed;
     color: #008c4a;
     border-radius: 50%;
     font-weight: bold;
@@ -421,6 +526,7 @@ section h2 {
 .recommendation p {
     color: #4b5563;
     padding-top: 8px;
+    line-height: 1.7;
 }
 
 
@@ -432,16 +538,24 @@ section h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin-top: 25px;
+    margin-top: 28px;
 }
 
 .skills-list span {
     background-color: #e8f6ef;
     color: #00763f;
     border: 1px solid #cfe9da;
-    padding: 9px 16px;
+    padding: 9px 17px;
     border-radius: 20px;
     font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.skills-list span:hover {
+    background-color: #d9f0e3;
+    border-color: #008c4a;
+    transform: translateY(-2px);
 }
 
 
@@ -452,16 +566,23 @@ section h2 {
 .final-cta {
     background-color: #f0faf5;
     text-align: center;
+    border-top: 1px solid #dcefe5;
 }
 
 .final-cta h2 {
+    padding-left: 0;
     margin-bottom: 15px;
+}
+
+.final-cta h2::before {
+    display: none;
 }
 
 .final-cta p {
     max-width: 650px;
     margin: 0 auto 28px;
     color: #6b7280;
+    line-height: 1.7;
 }
 
 
@@ -496,19 +617,21 @@ footer {
     }
 
     .project-hero {
-        padding: 75px 0;
+        padding: 75px 0 70px;
     }
 
     .project-hero h1 {
         font-size: 2.5rem;
+        letter-spacing: -0.5px;
     }
 
     .project-intro {
         font-size: 1rem;
+        line-height: 1.7;
     }
 
     section {
-        padding: 60px 0;
+        padding: 65px 0;
     }
 
     section h2 {
@@ -536,10 +659,15 @@ footer {
     }
 
     .dashboard-image img {
-        border-radius: 6px;
+        border-radius: 7px;
     }
 
     .recommendation {
         gap: 15px;
+    }
+
+    .question-card,
+    .finding-card {
+        padding: 26px;
     }
 }
