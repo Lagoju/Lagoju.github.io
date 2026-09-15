@@ -40,7 +40,7 @@ nav {
     top: 0;
     z-index: 1000;
     background-color: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid #dbeafe;
 }
 
 .nav-container {
@@ -82,23 +82,30 @@ nav {
 
 .hero {
     padding: 110px 0;
-    background-color: #f8faff;
+    background-color: #f5f9ff;
+    border-bottom: 1px solid #dbeafe;
 }
 
 .hero-content {
     max-width: 750px;
 }
 
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 15px;
-    color: #111827;
+.hero-greeting {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2563eb;
+    margin-bottom: 18px;
+    position: relative;
 }
 
-.hero h2 {
-    font-size: 1.8rem;
-    color: #2563eb;
-    margin-bottom: 20px;
+.hero-greeting::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background-color: #2563eb;
+    margin-top: 12px;
+    border-radius: 3px;
 }
 
 .hero p {
@@ -128,6 +135,23 @@ nav {
 
 .btn-primary:hover {
     background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Main portfolio button */
+.primary-button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.primary-button:hover {
+    background-color: #1d4ed8;
+    color: #ffffff;
     transform: translateY(-2px);
 }
 
@@ -163,15 +187,49 @@ section h2 {
     color: #111827;
 }
 
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    position: relative;
+    padding-left: 15px;
+}
+
+.section-heading h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 4px;
+    background-color: #2563eb;
+    border-radius: 4px;
+}
+
 .section-intro {
     color: #6b7280;
     margin-bottom: 40px;
+}
+
+.section-label {
+    color: #2563eb;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
 }
 
 
 /* =========================
    ABOUT
 ========================= */
+
+#about {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eef4ff;
+}
 
 .about-content {
     max-width: 800px;
@@ -187,6 +245,12 @@ section h2 {
    PROJECTS
 ========================= */
 
+.projects-section {
+    background-color: #f7faff;
+    border-top: 1px solid #e8f0ff;
+    border-bottom: 1px solid #e8f0ff;
+}
+
 .projects {
     background-color: #f9fafb;
 }
@@ -200,7 +264,8 @@ section h2 {
 .project-card {
     background-color: #ffffff;
     padding: 30px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #dbeafe;
+    border-top: 4px solid #2563eb;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
@@ -208,7 +273,7 @@ section h2 {
 .project-card:hover {
     transform: translateY(-5px);
     border-color: #2563eb;
-    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.08);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.10);
 }
 
 .project-card h3 {
@@ -220,6 +285,14 @@ section h2 {
 .project-card p {
     color: #6b7280;
     margin-bottom: 20px;
+}
+
+.project-category {
+    color: #2563eb !important;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px !important;
 }
 
 .project-link {
@@ -235,6 +308,10 @@ section h2 {
 /* =========================
    WRITING
 ========================= */
+
+.writing-section {
+    background-color: #ffffff;
+}
 
 .writing {
     background-color: #ffffff;
@@ -263,6 +340,11 @@ section h2 {
    SKILLS
 ========================= */
 
+#skills {
+    background-color: #f7faff;
+    border-top: 1px solid #e8f0ff;
+}
+
 .skills {
     background-color: #f9fafb;
 }
@@ -283,10 +365,31 @@ section h2 {
     border: 1px solid #dbeafe;
 }
 
+/* Your actual skill tags */
+.skill-tag {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    padding: 9px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #dbeafe;
+    transition: all 0.25s ease;
+}
+
+.skill-tag:hover {
+    background-color: #dbeafe;
+    transform: translateY(-2px);
+}
+
 
 /* =========================
    CONTACT
 ========================= */
+
+.contact-section {
+    background-color: #f5f9ff;
+    border-top: 1px solid #dbeafe;
+}
 
 .contact-content {
     max-width: 700px;
@@ -306,6 +409,7 @@ section h2 {
 .contact-links a {
     color: #2563eb;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .contact-links a:hover {
@@ -347,12 +451,8 @@ footer {
         padding: 80px 0;
     }
 
-    .hero h1 {
-        font-size: 2.6rem;
-    }
-
-    .hero h2 {
-        font-size: 1.5rem;
+    .hero-greeting {
+        font-size: 1.7rem;
     }
 
     .hero p {
