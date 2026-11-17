@@ -1,383 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Jonah Peter | Data Analyst</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jonah Peter's data analytics portfolio — projects, insights and the stories behind the numbers.">
+  <title>Jonah Peter | Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <nav class="site-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Jonah Peter homepage">JP<span>.</span></a>
+      <div class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="nav-contact">Let's talk <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="container nav-container">
+  <header class="hero">
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> DATA ANALYST · STORYTELLER</p>
+      <h1>Hello, I'm Jonah<span class="gold-dot">.</span><br><span class="hero-outline">I make data make sense.</span></h1>
+      <p class="hero-description">I'm interested in understanding problems, uncovering patterns, and finding the story behind the numbers.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="button button-gold">Explore my work <span aria-hidden="true">↘</span></a>
+        <a href="#about" class="text-link hero-secondary">A little about me <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-footnote"><span class="status-dot"></span> Curious by nature. Analytical by habit.</div>
+    </div>
+    <div class="hero-index" aria-hidden="true">01 / 04</div>
+  </header>
 
-            <a href="index.html" class="logo">
-                Jonah Peter
-            </a>
-
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#writing">Writing</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </div>
-
+  <main>
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div class="section-intro">
+          <p class="eyebrow"><span class="eyebrow-line"></span> THE PERSON BEHIND THE DATA</p>
+          <h2>Curiosity is<br>where it starts<span class="gold-dot">.</span></h2>
+          <p class="intro-note">A thoughtful approach to solving real problems with data.</p>
         </div>
-    </nav>
-
-
-    <!-- Hero -->
-    <header class="hero">
-
-        <div class="container hero-content">
-
-            <p class="hero-greeting" style="font-size: 2rem;">
-                Hello, I'm Jonah.
-            </p>
-
-            <p class="hero-description">
-                I'm a data analyst that is interested in understanding problems,
-                uncovering patterns, and finding the story behind the numbers.
-            </p>
-
-            <a href="#projects" class="button primary-button">
-                View My Projects
-            </a>
-
+        <div class="about-content">
+          <p>My approach to analysis revolves around identifying common or recurring problems, digging into the data, and figuring out why they are happening. I'm less interested in simply reporting <em>what</em> happened and more interested in understanding the story behind it — what changed, what might be causing it, and where the problem actually lies.</p>
+          <p>My toolkit includes Excel, SQL, Python, Power BI, and an unhealthy amount of curiosity. I enjoy the entire process of working with data — from cleaning the wonderfully chaotic stuff that people insist is "ready to analyse," to building dashboards and reports that make the final answer easier to understand.</p>
+          <p>I'm constantly learning, experimenting, and finding new ways to approach problems — while of course, occasionally discovering that the reason my analysis wasn't working was because I forgot one comma three hours ago.</p>
+          <p class="about-ending">Data can tell you what happened. <strong>I want to know why.</strong></p>
         </div>
-
-    </header>
-
-
-    <!-- About -->
-    <section id="about" class="section">
-
-        <div class="container">
-
-            <div class="section-heading">
-                <p class="section-label">About Me</p>
-            </div>
-
-            <div class="about-content" style="font-size: 1.08rem;">
-
-
-                <p>
-                    My approach to analysis revolves around identifying common
-                    or recurring problems, digging into the data, and figuring
-                    out why they are happening. I'm less interested in simply
-                    reporting <em>what</em> happened and more interested in
-                    understanding the story behind it — what changed, what
-                    might be causing it, and where the problem actually lies.
-                </p>
-
-                <p>
-                    My toolkit includes Excel, SQL, Python, Power BI, and an
-                    unhealthy amount of curiosity. I enjoy the entire process
-                    of working with data — from cleaning the wonderfully
-                    chaotic stuff that people insist is "ready to analyse,"
-                    to building dashboards and reports that make the final
-                    answer easier to understand.
-                </p>
-
-                <p>
-                    I'm constantly learning, experimenting, and finding new
-                    ways to approach problems — while of course, occasionally
-                    discovering that the reason my analysis wasn't working
-                    was because I forgot one comma three hours ago.
-                </p>
-
-                <p class="about-ending">
-                    Data can tell you what happened. I want to know why.
-                </p>
-
-            </div>
-
-        </div>
-
+      </div>
     </section>
 
-
-    <!-- Projects -->
     <section id="projects" class="section projects-section">
-
-        <div class="container">
-
-            <div class="section-heading">
-                <p class="section-label">Selected Work</p>
-
-                <h2>Projects</h2>
-
-                <p>
-                    A collection of data projects where I explore problems,
-                    work through the data, and turn the results into
-                    understandable insights.
-                </p>
-            </div>
-
-
-            <!-- Project 1 -->
-            <article class="project-card">
-
-                <div class="project-number">
-                    01
-                </div>
-
-                <div class="project-content">
-
-                    <p class="project-category">
-                        Data Analytics · SQL · Power BI
-                    </p>
-
-                    <h3>
-                        Health Inequality in Nigeria:
-                        A Child Nutrition Analysis
-                    </h3>
-
-                    <p>
-                        An end-to-end data analytics project analyzing child
-                        nutrition inequalities in Nigeria using WHO Global
-                        Health Observatory data. The analysis explores how
-                        wealth, educational attainment, and place of residence
-                        are associated with childhood nutrition outcomes.
-                    </p>
-
-                    <div class="project-links">
-
-                        <a
-                            href="project-1.html"
-                            class="project-link primary-project-link"
-                        >
-                            View Project →
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- Project 2 -->
-            <article class="project-card">
-
-                <div class="project-number">
-                    02
-                </div>
-
-                <div class="project-content">
-
-                    <p class="project-category">
-                        Data Analytics · Python · SQL · Power BI
-                    </p>
-
-                    <h3>
-                        NPFL Data Analytics
-                    </h3>
-
-                    <p>
-                        An analysis of Nigerian Professional Football League
-                        data, exploring performance patterns, team statistics,
-                        and other insights from the league.
-                    </p>
-
-                    <div class="project-links">
-
-                        <a
-                            href="project-2.html"
-                            class="project-link primary-project-link"
-                        >
-                            View Project →
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- Project 3 -->
-            <article class="project-card">
-
-                <div class="project-number">
-                    03
-                </div>
-
-                <div class="project-content">
-
-                    <p class="project-category">
-                        Data Analytics · Python · Power BI · Elections
-                    </p>
-
-                    <h3>
-                        Nigeria Presidential Election Analysis (2015–2023)
-                    </h3>
-
-                    <p>
-                        An analysis of Nigeria's 2015, 2019 and 2023 presidential
-                        elections, exploring voter turnout, party performance,
-                        electoral volatility and geographic voting patterns,
-                        alongside a separate analysis of 2023 polling-unit data.
-                    </p>
-
-                    <div class="project-links">
-
-                        <a
-                            href="project-3.html"
-                            class="project-link primary-project-link"
-                        >
-                            View Project →
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
+      <div class="container">
+        <div class="projects-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> SELECTED WORK</p>
+            <h2>Projects<span class="gold-dot">.</span></h2>
+          </div>
+          <p class="projects-lede">A few questions I've explored, datasets I've untangled, and insights I've brought to the surface.</p>
         </div>
 
-    </section>
-
-
-    <!-- Writing -->
-    <section id="writing" class="section writing-section">
-
-        <div class="container writing-container">
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    Writing
-                </p>
-
-                <h2>
-                    I write about the projects I work on.
-                </h2>
-
-            </div>
-
-            <p>
-                My projects don't end when the dashboard is finished.
-                I write about the process behind my analyses — the questions
-                I started with, the problems I encountered, and what the data
-                ultimately revealed.
-            </p>
-
-            <a
-                href="https://medium.com/@Lagoju"
-                class="button primary-button writing-button"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Read My Articles
+        <div class="project-grid">
+          <article class="project-card">
+            <a class="project-image-link" href="project-1.html" aria-label="View Health Inequality in Nigeria project">
+              <img class="project-thumbnail" src="images/thumbnails/project1thumb.png" alt="Preview of the child nutrition and health inequality analysis" loading="lazy">
+              <span class="image-index">PROJECT 01</span>
+              <span class="image-arrow" aria-hidden="true">↗</span>
             </a>
+            <div class="project-card-body">
+              <p class="project-category">DATA ANALYTICS <span>·</span> SQL <span>·</span> POWER BI</p>
+              <h3>Health Inequality in Nigeria: A Child Nutrition Analysis</h3>
+              <p>An end-to-end analysis of child nutrition inequalities using WHO Global Health Observatory data, exploring how wealth, education, and place of residence are associated with childhood nutrition outcomes.</p>
+              <a href="project-1.html" class="project-link">Explore project <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
 
+          <article class="project-card">
+            <a class="project-image-link" href="project-2.html" aria-label="View NPFL Data Analytics project">
+              <img class="project-thumbnail" src="images/thumbnails/project2thumb.png" alt="Preview of Nigerian Professional Football League data analysis" loading="lazy">
+              <span class="image-index">PROJECT 02</span>
+              <span class="image-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-card-body">
+              <p class="project-category">DATA ANALYTICS <span>·</span> PYTHON <span>·</span> SQL <span>·</span> POWER BI</p>
+              <h3>NPFL Data Analytics</h3>
+              <p>An exploration of Nigerian Professional Football League data, uncovering performance patterns, team statistics, and insights from the league.</p>
+              <a href="project-2.html" class="project-link">Explore project <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="project-image-link" href="project3.html" aria-label="View Nigeria Presidential Election Analysis project">
+              <img class="project-thumbnail" src="images/thumbnails/project3thumb.png" alt="Preview of Nigeria presidential election analysis from 2015 to 2023" loading="lazy">
+              <span class="image-index">PROJECT 03</span>
+              <span class="image-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-card-body">
+              <p class="project-category">DATA ANALYTICS <span>·</span> PYTHON <span>·</span> POWER BI</p>
+              <h3>Nigeria Presidential Election Analysis (2015–2023)</h3>
+              <p>A longitudinal look at presidential election results, voter participation, party competition, electoral volatility, and geographic patterns across three election cycles.</p>
+              <a href="project3.html" class="project-link">Explore project <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="next-project-card" aria-label="Next project loading">
+            <div class="next-card-top"><span class="loading-dot"></span> CURRENTLY IN THE WORKS</div>
+            <div class="next-card-art" aria-hidden="true">
+              <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="orbit orbit-three"></span>
+              <span class="orbit-core">04</span>
+            </div>
+            <div class="next-card-copy">
+              <p class="eyebrow">UP NEXT</p>
+              <h3>Next project<br><span>loading.</span></h3>
+              <p>Another question is taking shape. Check back soon for the next deep dive.</p>
+            </div>
+            <span class="next-card-footer">GOOD DATA TAKES TIME <span aria-hidden="true">✳</span></span>
+          </article>
         </div>
-
+      </div>
     </section>
 
-
-    <!-- Skills -->
-    <section id="skills" class="section">
-
-        <div class="container">
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    Toolkit
-                </p>
-
-                <h2>
-                    Skills & Tools
-                </h2>
-
-            </div>
-
-            <div class="skills-list">
-
-                <span class="skill-tag">Excel</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">Power BI</span>
-                <span class="skill-tag">Pandas</span>
-                <span class="skill-tag">Data Cleaning</span>
-                <span class="skill-tag">Exploratory Data Analysis</span>
-                <span class="skill-tag">Data Visualization</span>
-
-            </div>
-
+    <section id="writing" class="section writing-section">
+      <div class="container writing-grid">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> NOTES FROM THE PROCESS</p>
+          <h2>The story doesn't<br>end at the dashboard<span class="gold-dot">.</span></h2>
         </div>
-
+        <div class="writing-content">
+          <p>My projects don't end when the dashboard is finished. I write about the process behind my analyses — the questions I started with, the problems I encountered, and what the data ultimately revealed.</p>
+          <a href="https://medium.com/@Lagoju" class="button button-outline" target="_blank" rel="noopener noreferrer">Read my articles <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
     </section>
 
+    <section id="skills" class="section skills-section">
+      <div class="container skills-layout">
+        <div class="skills-heading">
+          <p class="eyebrow"><span class="eyebrow-line"></span> MY TOOLKIT</p>
+          <h2>Tools of<br>the trade<span class="gold-dot">.</span></h2>
+        </div>
+        <div class="skills-list" aria-label="Skills and tools">
+          <span>Excel</span><span>SQL</span><span>Python</span><span>Power BI</span><span>Pandas</span><span>Data Cleaning</span><span>Exploratory Data Analysis</span><span>Data Visualization</span>
+        </div>
+      </div>
+    </section>
 
-    <!-- Contact -->
     <section id="contact" class="contact-section">
-
-        <div class="container contact-container">
-
-            <p class="section-label">
-                Contact
-            </p>
-
-            <h2>
-                Let's connect.
-            </h2>
-
-            <p>
-                Like what you see? Feel free to reach out, I'm always open
-                to connecting with people interested in data, analytics and
-                interesting problems
-            </p>
-
-            <div class="contact-links">
-
-                <a
-                    href="https://www.linkedin.com/in/jonah-peter/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    LinkedIn
-                </a>
-
-                <a href="mailto:jonahpeter96@gmail.com">
-                    Email
-                </a>
-
-                <a
-                    href="https://medium.com/@Lagoju"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Medium
-                </a>
-
-            </div>
-
+      <div class="container contact-inner">
+        <p class="eyebrow"><span class="eyebrow-line"></span> HAVE A QUESTION OR AN IDEA?</p>
+        <h2>Let's make<br>something <span>clear.</span></h2>
+        <p>I'm always open to connecting with people interested in data, analytics, and interesting problems.</p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/jonah-peter/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="mailto:jonahpeter96@gmail.com">Email <span aria-hidden="true">↗</span></a>
+          <a href="https://medium.com/@Lagoju" target="_blank" rel="noopener noreferrer">Medium <span aria-hidden="true">↗</span></a>
         </div>
-
+      </div>
     </section>
+  </main>
 
-
-    <!-- Footer -->
-    <footer>
-
-        <div class="container">
-
-            <p>
-                © 2026 Jonah Peter. All rights reserved.
-            </p>
-
-        </div>
-
-    </footer>
-
+  <footer class="site-footer">
+    <div class="container footer-inner"><a href="index.html" class="footer-logo">JP<span>.</span></a><p>© 2026 Jonah Peter. Built with curiosity and a lot of coffee.</p><a href="#top" class="back-top">Back to top ↑</a></div>
+  </footer>
 </body>
 </html>
